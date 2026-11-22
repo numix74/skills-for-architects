@@ -1,7 +1,0 @@
-# NYC dataset query procedure
-
-This is an Arch Studio procedure, not a Socrata field dictionary. The [source catalog](../../corpus/sources/catalog.json) owns dataset IDs, original URLs and publisher metadata/column locators. Filter `nyc`, `property` and the relevant domain. Fetch the selected publisher metadata and API documentation before constructing queries; record dataset revision and query scope. Do not assume field names, code meanings, row limits, rate limits or status semantics from plugin prose.
-
-Use an available supported fetch route. Select/filter only fields identified in the actual publisher metadata and safely encode user values; never concatenate untrusted query fragments. Keep credential material out of output and manifests. Page through the selected scope according to the current API behavior and record any cap/truncation. Never label a partial page the full result.
-
-Resolve join keys and coded values from the publisher's current documentation or lookup dataset. Keep original values alongside display labels and preserve one-to-many relationships. A query failure is not zero records; empty results establish only no matching rows in that particular query. Record source, filters, timestamp, matched count, retrieved count and limitations. On a schema error, refresh original metadata before retrying; do not silently retry guessed fields. Respect actual rate-limit responses, bound retries and report remaining gaps.
