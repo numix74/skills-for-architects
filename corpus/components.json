@@ -1290,7 +1290,8 @@
           }
         ],
         "hostContract": "skills/fr-monuments-historiques/host-contract.json"
-      }
+      },
+      "description": "Vérifier si un bâtiment est classé ou inscrit aux Monuments historiques, ou situé dans un périmètre protégé (abords, SPR). France uniquement."
     },
     {
       "id": "skill:fr-rapport-foncier",
@@ -3074,7 +3075,8 @@
           }
         ],
         "handoffs": []
-      }
+      },
+      "description": "Analyser le zonage d'une parcelle française (PLU, PLUi, carte communale, règlement national d'urbanisme) : zone, hauteur, emprise, retraits, usages. Pour une dérogation, utiliser fr-derogations-urbanisme."
     },
     {
       "id": "skill:fr-enveloppe-constructible",
@@ -3116,7 +3118,8 @@
         ],
         "conditionalReferences": [],
         "handoffs": []
-      }
+      },
+      "description": "Générer une visualisation 3D interactive de l'enveloppe constructible à partir d'un rapport fr-zonage-plu. Nécessite ce rapport en entrée."
     },
     {
       "id": "tool:plugin-namespace",
