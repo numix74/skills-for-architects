@@ -1,6 +1,6 @@
 ---
 name: learn
-description: "Guided, hands-on course teaching architects how to use Codex or Claude Code — six short modules, each built around an exercise on a bundled sandbox project (a fictional Brooklyn art museum expansion). Resumable across sessions via PROGRESS.md. Use when the user runs $learn or /as:learn, says they're new to AI-assisted project work, or asks how to learn it."
+description: "Parcours guidé et pratique pour apprendre aux architectes à utiliser Codex ou Claude Code : six courts modules, chacun construit autour d'un exercice sur un projet de démonstration (une extension fictive de musée d'art à Brooklyn). Reprise possible d'une session à l'autre via PROGRESS.md. Utiliser lorsque l'utilisateur lance $learn ou /as:learn, indique qu'il débute avec le travail de projet assisté par IA, ou demande comment apprendre."
 allowed-tools:
   - Read
   - Write

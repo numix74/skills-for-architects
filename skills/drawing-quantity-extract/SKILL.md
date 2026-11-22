@@ -1,6 +1,6 @@
 ---
 name: drawing-quantity-extract
-description: "Extract countable FF&E or luminaire instances from supplied drawings with position-level evidence. Use for plan quantities or symbol counts; not area takeoffs, product specs or cross-source reconciliation."
+description: "Extraire les occurrences comptables de FF&E ou de luminaires à partir de plans fournis, avec des preuves de position. Utiliser pour les quantités de plans ou le comptage de symboles ; ne pas utiliser pour les métrés de surfaces, les spécifications produit ou la réconciliation entre sources."
 allowed-tools:
   - Read
   - Write

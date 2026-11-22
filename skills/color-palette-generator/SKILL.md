@@ -1,6 +1,6 @@
 ---
 name: color-palette-generator
-description: "Create an HTML color palette from a mood, description, or image, with swatches, color codes, pairings, and contrast checks. Use for color schemes or brand colors."
+description: "Créer une palette de couleurs HTML à partir d'une ambiance, d'une description ou d'une image, avec nuanciers, codes couleur, associations et contrôles de contraste. Utiliser pour les schémas chromatiques ou les couleurs de marque."
 allowed-tools:
   - Read
   - Write

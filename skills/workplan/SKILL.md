@@ -1,6 +1,6 @@
 ---
 name: workplan
-description: "Prepare a proportionate work plan with outcomes, steps, dependencies and acceptance evidence. Use to plan substantial work or coordinate an approved team; a plan-only request does not authorize implementation."
+description: "Préparer un plan de travail proportionné avec résultats, étapes, dépendances et preuves d'acceptation. Utiliser pour planifier un travail important ou coordonner une équipe approuvée ; une simple demande de plan n'autorise pas la mise en œuvre."
 allowed-tools:
   - Read
   - Write

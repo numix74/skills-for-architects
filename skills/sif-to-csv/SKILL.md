@@ -1,6 +1,6 @@
 ---
 name: sif-to-csv
-description: "Parse a SIF (Standard Interchange Format) input into a readable preview and optionally append canonical product rows to the project's CSV library. Use when asked to convert or inspect SIF dealer data. For the reverse direction use /as:csv-to-sif."
+description: "Analyser une entrée SIF (Standard Interchange Format) en aperçu lisible et, si demandé, ajouter les lignes produit canoniques à la bibliothèque CSV du projet. Utiliser quand on demande de convertir ou d'inspecter des données SIF de revendeur. Pour le sens inverse, utiliser /as:csv-to-sif."
 allowed-tools:
   - Read
   - Write

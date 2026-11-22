@@ -1,6 +1,6 @@
 ---
 name: epd-research
-description: "Search for EPDs by product category, CSI division, or material type — finds EPDs from EC3, program operator registries, and manufacturer sites. Use when the user asks to \"find EPDs for...\", locate declarations for a material, or source low-carbon product documentation."
+description: "Rechercher des FDES par catégorie de produit, division CSI ou type de matériau : trouve les FDES dans EC3, les registres des opérateurs de programme et les sites des fabricants. Utiliser quand l'utilisateur demande de « trouver des FDES pour… », de localiser les déclarations d'un matériau ou de se procurer la documentation des produits bas carbone."
 allowed-tools:
   - Read
   - Write

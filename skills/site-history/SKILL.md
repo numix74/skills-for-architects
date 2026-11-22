@@ -1,6 +1,6 @@
 ---
 name: site-history
-description: "Neighborhood context and history — adjacent uses, architectural character, landmarks, commercial activity, and planned development from an address. Use when the user asks about a site's history or surroundings, \"what's around this site\", neighborhood character, or nearby planned development."
+description: "Contexte et historique du quartier : usages voisins, caractère architectural, monuments, activité commerciale et aménagements prévus à partir d'une adresse. Utiliser quand l'utilisateur interroge l'histoire ou l'environnement d'un site, « qu'est-ce qu'il y a autour de ce site », le caractère du quartier ou les projets proches."
 allowed-tools:
   - WebSearch
   - WebFetch

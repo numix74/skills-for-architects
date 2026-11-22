@@ -1,6 +1,6 @@
 ---
 name: lighting-report-extract
-description: "Check reported lighting quantities and results in supplied simulation PDFs without adding repeated calculation surfaces. Use for scoped luminaire inventories and illuminance results; not simulation or compliance."
+description: "Vérifier les quantités et résultats d'éclairage déclarés dans des PDF de simulation fournis, sans ajouter de surfaces de calcul répétées. Utiliser pour des inventaires de luminaires délimités et des résultats d'éclairement ; ne pas utiliser pour la simulation ou la conformité."
 allowed-tools:
   - Read
   - Write

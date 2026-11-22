@@ -1,6 +1,6 @@
 ---
 name: schedule-quantity-reconcile
-description: "Compare scoped quantity snapshots and explain matches, missing rows and conflicts. Use to reconcile drawing, report or schedule counts; not to extract source documents or update adopted records."
+description: "Comparer des instantanés de quantités délimités et expliquer les correspondances, lignes manquantes et conflits. Utiliser pour réconcilier des décomptes de plans, de rapports ou de calendriers ; ne pas utiliser pour extraire des documents sources ou mettre à jour des enregistrements adoptés."
 allowed-tools:
   - Read
   - Write

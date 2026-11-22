@@ -1,6 +1,6 @@
 ---
 name: norma
-description: "Use Norma to coordinate architecture, buildings, projects, clients, proposals, schedules, specifications, sites, zoning, FF&E and firm work through the relevant Arch Studio owners. Direct skill requests stay with their owner."
+description: "Utiliser Norma pour coordonner l'architecture, les bâtiments, les projets, les clients, les propositions, les calendriers, les spécifications, les sites, le zonage, le FF&E et le travail de l'agence, via les propriétaires Arch Studio concernés. Les demandes directes de skill restent à leur propriétaire."
 allowed-tools:
   - Read
   - Glob

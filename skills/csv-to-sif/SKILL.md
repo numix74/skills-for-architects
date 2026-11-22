@@ -1,6 +1,6 @@
 ---
 name: csv-to-sif
-description: "Export a project's FF&E product-library CSV as dealer-system SIF. Use to produce a .sif schedule; use sif-to-csv for the reverse direction."
+description: "Exporter le CSV de la bibliothèque de produits FF&E d'un projet au format SIF des systèmes revendeurs. Utiliser pour produire un calendrier .sif ; utiliser sif-to-csv pour le sens inverse."
 allowed-tools:
   - Read
   - Write

@@ -1,6 +1,6 @@
 ---
 name: workplace-programmer
-description: "Build office space programs through guided workplace strategy: area splits, room schedules, and planned seat counts. Use to program or size a workplace; not for code occupant-load calculations."
+description: "Construire des programmes de bureaux par une stratégie de travail guidée : répartition des surfaces, tableaux de salles et nombre de postes prévus. Utiliser pour programmer ou dimensionner un lieu de travail ; ne pas utiliser pour les calculs réglementaires de charge d'occupation."
 allowed-tools:
   - Read
   - Write

@@ -1,6 +1,6 @@
 ---
 name: site-visit-report
-description: "Prepare a sourced site-visit record separating direct observations, participant reports, interpretations, limitations and proposed follow-ups."
+description: "Préparer un compte rendu de visite de site sourcé, distinguant observations directes, témoignages des participants, interprétations, limites et suites proposées."
 allowed-tools:
   - Read
   - Write

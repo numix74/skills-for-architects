@@ -1,6 +1,6 @@
 ---
 name: slide-deck-generator
-description: "Generate a self-contained HTML slide deck from a topic, outline, report, or data. Use for presentations and slide decks; not for editing PowerPoint files."
+description: "Générer une présentation HTML autonome à partir d'un sujet, d'un plan, d'un rapport ou de données. Utiliser pour les présentations et diaporamas ; ne pas utiliser pour modifier des fichiers PowerPoint."
 allowed-tools:
   - Read
   - Write

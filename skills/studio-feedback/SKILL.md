@@ -1,6 +1,6 @@
 ---
 name: studio-feedback
-description: "Prepare a user-reviewed Arch Studio bug report or feature request for GitHub. Use when the user runs /as:studio-feedback, says \"report a bug\", \"this skill broke\", \"send feedback\", or requests a feature. Do not use for Claude Code's native /feedback command."
+description: "Préparer un rapport de bogue ou une demande de fonctionnalité Arch Studio, relu par l'utilisateur, pour GitHub. Utiliser quand l'utilisateur lance /as:studio-feedback, dit « signaler un bogue », « ce skill a cassé », « envoyer un retour » ou demande une fonctionnalité. Ne pas utiliser pour la commande native /feedback de Claude Code."
 allowed-tools:
   - Read
   - Bash

@@ -1,6 +1,6 @@
 ---
 name: product-research
-description: "Find and compare current FF&E candidates from a design brief, with sourced purchasing facts and optional CSV-library save. Use to research or source products; not to match from an image or pair coordinating items."
+description: "Trouver et comparer des produits FF&E candidats à partir d'un programme de conception, avec des données d'achat sourcées et un enregistrement optionnel dans la bibliothèque CSV. Utiliser pour rechercher ou sourcer des produits ; ne pas utiliser pour une correspondance à partir d'image ou l'association de pièces coordonnées."
 allowed-tools:
   - Read
   - Write

@@ -1,6 +1,6 @@
 ---
 name: product-cut-sheet
-description: "Create a source-faithful single-product FF&E cut sheet or spec book entry from a supplied PDF or product URL. Preserve selected identity and source limits; use ffe-spec-book for a complete FF&E book and spec-writer for Project Manual requirements."
+description: "Créer une fiche FF&E monoproduit fidèle à la source, ou une entrée de cahier de spécifications, à partir d'un PDF ou d'une URL produit fournis. Préserver l'identité retenue et les limites des sources ; utiliser ffe-spec-book pour un cahier FF&E complet et spec-writer pour les exigences du CCTP."
 allowed-tools:
   - Read
   - Write

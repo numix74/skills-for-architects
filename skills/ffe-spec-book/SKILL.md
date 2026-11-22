@@ -1,6 +1,6 @@
 ---
 name: ffe-spec-book
-description: "Assemble an ordered FF&E specification book from selected product cut sheets, with every product accounted for and verified package receipts. Use for grouped sheets or a combined FF&E book; use spec-writer for Project Manual sections."
+description: "Assembler un cahier de spécifications FF&E ordonné à partir des fiches produits sélectionnées, avec tous les produits recensés et des reçus de conditionnement vérifiés. Utiliser pour des fiches groupées ou un cahier FF&E combiné ; utiliser spec-writer pour les sections du CCTP."
 allowed-tools:
   - Read
   - Write

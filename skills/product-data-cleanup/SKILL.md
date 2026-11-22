@@ -1,6 +1,6 @@
 ---
 name: product-data-cleanup
-description: "Clean a local FF&E CSV schedule by normalizing casing, dimensions, units, language, materials, and formatting. Use when asked to clean, fix, or standardize product data."
+description: "Nettoyer un calendrier FF&E local au format CSV en normalisant la casse, les dimensions, les unités, la langue, les matériaux et la mise en forme. Utiliser quand on demande de nettoyer, corriger ou standardiser des données produit."
 allowed-tools:
   - Read
   - Write

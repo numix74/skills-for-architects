@@ -1,6 +1,6 @@
 ---
 name: product-enrich
-description: "Enrich FF&E schedule rows with categories, colors, materials, and style tags. Use to tag, categorize, or fill those missing fields; not to research new products."
+description: "Enrichir les lignes de calendrier FF&E avec catégories, couleurs, matériaux et étiquettes de style. Utiliser pour étiqueter, catégoriser ou compléter les champs manquants ; ne pas utiliser pour rechercher de nouveaux produits."
 allowed-tools:
   - Read
   - Write

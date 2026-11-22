@@ -1,6 +1,6 @@
 ---
 name: invoice
-description: "Maintain an append-only project INVOICES.csv ledger from explicit billing facts and recorded lifecycle evidence; never infer charges or payment from activity or time logs."
+description: "Tenir à jour un registre INVOICES.csv du projet en ajout seul, à partir de faits de facturation explicites et de preuves de cycle de vie enregistrées ; ne jamais déduire une facturation ou un paiement de l'activité ou des feuilles de temps."
 allowed-tools:
   - Read
   - Write

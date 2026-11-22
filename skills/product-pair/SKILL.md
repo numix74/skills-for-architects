@@ -1,6 +1,6 @@
 ---
 name: product-pair
-description: "Suggest complementary products that pair well with a given item — side tables for sofas, task lights for desks, etc. Use when the user asks \"what goes with\" a product, wants coordinating pieces, or asks to complete a furniture grouping."
+description: "Suggérer des produits complémentaires qui s'associent bien à un article donné : tables d'appoint pour canapés, lampes de travail pour bureaux, etc. Utiliser quand l'utilisateur demande « qu'est-ce qui va avec » un produit, veut des pièces coordonnées ou souhaite compléter un ensemble mobilier."
 allowed-tools:
   - Read
   - Write

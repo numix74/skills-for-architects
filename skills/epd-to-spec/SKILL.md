@@ -1,6 +1,6 @@
 ---
 name: epd-to-spec
-description: "Draft Project Manual specification requirements for EPD submittals and sourced GWP limits. Use for embodied-carbon requirements in project sections; use the EPD parsing, research or comparison skills for product evidence."
+description: "Rédiger les exigences de spécification du Cahier des clauses techniques particulières (CCTP) pour la remise des FDES et les limites GWP sourcées. Utiliser pour les exigences d'impact carbone dans les sections de projet ; utiliser les skills d'analyse, de recherche ou de comparaison des FDES pour les preuves produit."
 allowed-tools:
   - Read
   - Write

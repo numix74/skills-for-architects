@@ -1,6 +1,6 @@
 ---
 name: product-spec-pdf-parser
-description: "Extract sourced FF&E specifications from supplied product PDFs into reviewable structured data. Use for fact sheets, spec sheets and price books; not web-page capture, EPD extraction or automatic schedule adoption."
+description: "Extraire des spécifications FF&E sourcées à partir de PDF produits fournis, en données structurées à vérifier. Utiliser pour les fiches techniques, fiches de spécification et tarifs ; ne pas utiliser pour la capture de pages web, l'extraction de FDES ou l'adoption automatique d'un calendrier."
 allowed-tools:
   - Read
   - Write

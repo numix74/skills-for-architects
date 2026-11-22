@@ -1,6 +1,6 @@
 ---
 name: resize-images
-description: "Batch-resize or convert a folder of images for web, social media, slides, or ARCH-size print output while preserving originals. Use for image resizing, format presets, or photo batches; not for product-image background removal."
+description: "Redimensionner ou convertir par lot un dossier d'images pour le web, les réseaux sociaux, les présentations ou l'impression au format ARCH, en préservant les originaux. Utiliser pour le redimensionnement d'images, les préréglages de format ou les lots de photos ; ne pas utiliser pour supprimer le fond d'images produits."
 allowed-tools:
   - Read
   - Bash

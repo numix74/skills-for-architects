@@ -1,6 +1,6 @@
 ---
 name: environmental-analysis
-description: "Research climate, sun, flood, seismic, soil, contamination, and topography for a site. Use for environmental site analysis or hazard questions tied to a location."
+description: "Rechercher le climat, l'ensoleillement, les inondations, la sismicité, les sols, les pollutions et la topographie d'un site. Utiliser pour l'analyse environnementale d'un site ou les questions de risque liées à une localisation."
 allowed-tools:
   - WebSearch
   - WebFetch

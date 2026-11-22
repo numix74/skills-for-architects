@@ -1,6 +1,6 @@
 ---
 name: studio
-description: "Open, inspect or configure an Arch Studio workspace and register projects. Use for studio administration; direct domain skills and tools-only use remain available."
+description: "Ouvrir, inspecter ou configurer un espace de travail Arch Studio et enregistrer des projets. Utiliser pour l'administration du studio ; les skills métier directs et l'usage seul des outils restent disponibles."
 allowed-tools:
   - Read
   - Write

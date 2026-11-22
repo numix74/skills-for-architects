@@ -1,6 +1,6 @@
 ---
 name: epd-compare
-description: "Compare EPD products on normalized GWP and other impacts while checking declared units, system boundaries, and LEED eligibility. Use for side-by-side EPD comparison."
+description: "Comparer des produits couverts par une FDES (EPD) sur le GWP normalisé et d'autres impacts, en vérifiant les unités déclarées, les frontières du système et l'éligibilité LEED. Utiliser pour une comparaison côte à côte de FDES."
 allowed-tools:
   - Read
   - Write

@@ -1,6 +1,6 @@
 ---
 name: product-match
-description: "Find visually or functionally similar products from an image, name, or description. Use when the user asks to \"find something like this\", match a product from a photo, or source alternates to a given item."
+description: "Trouver des produits visuellement ou fonctionnellement similaires à partir d'une image, d'un nom ou d'une description. Utiliser quand l'utilisateur demande de « trouver quelque chose de similaire », d'identifier un produit à partir d'une photo ou de trouver des alternatives à un article donné."
 allowed-tools:
   - Read
   - Write

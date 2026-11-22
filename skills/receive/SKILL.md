@@ -1,6 +1,6 @@
 ---
 name: receive
-description: "Register received or authored project documents by confirmed coordinates, preserve their filenames and provenance, and find or verify registered documents. Use for filing a supplied file/package or locating documents by kind, date, source or revision."
+description: "Enregistrer les documents de projet reçus ou rédigés selon des coordonnées confirmées, conserver leurs noms de fichiers et leur provenance, et retrouver ou vérifier les documents enregistrés. Utiliser pour classer un fichier ou un paquet fourni, ou localiser des documents par type, date, source ou révision."
 allowed-tools:
   - Read
   - Write

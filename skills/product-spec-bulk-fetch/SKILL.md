@@ -1,6 +1,6 @@
 ---
 name: product-spec-bulk-fetch
-description: "Extract structured FF&E specs from a list of product URLs into a schedule. Use to pull or bulk-import product-page data; not for PDF catalogs."
+description: "Extraire des spécifications FF&E structurées à partir d'une liste d'URL de produits dans un calendrier. Utiliser pour récupérer ou importer en lot les données des pages produits ; ne pas utiliser pour les catalogues PDF."
 allowed-tools:
   - Read
   - Write

@@ -1,6 +1,6 @@
 ---
 name: product-image-processor
-description: "Download, resize, and remove backgrounds from product images at scale. Use when the user asks to \"process product images\", batch-download images from the schedule, strip backgrounds, or standardize product photos."
+description: "Télécharger, redimensionner et détourer les images de produits en lot. Utiliser quand l'utilisateur demande de « traiter les images produits », de télécharger en lot les images du calendrier, de supprimer les fonds ou de standardiser les photos produits."
 allowed-tools:
   - Read
   - Write

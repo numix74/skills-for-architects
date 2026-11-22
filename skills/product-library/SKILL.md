@@ -1,6 +1,6 @@
 ---
 name: product-library
-description: "Inspect or save reusable FF&E library products through reviewed, guarded transactions. Use for explicit library imports, corrections or recovery; adopted selections and workbook reconciliation belong to master-schedule."
+description: "Consulter ou enregistrer des produits de la bibliothèque FF&E réutilisable, par des transactions relues et protégées. Utiliser pour les imports explicites, corrections ou récupérations ; les sélections adoptées et la réconciliation des classeurs relèvent de master-schedule."
 allowed-tools:
   - Read
   - Write

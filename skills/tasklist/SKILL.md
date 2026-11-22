@@ -1,6 +1,6 @@
 ---
 name: tasklist
-description: "Maintain the canonical TASKS.csv with permanent IDs, provenance and lifecycle history; list, add, update, complete, cancel or import selected actions."
+description: "Tenir à jour le fichier de référence TASKS.csv avec des identifiants permanents, la provenance et l'historique du cycle de vie ; lister, ajouter, mettre à jour, terminer, annuler ou importer des actions sélectionnées."
 allowed-tools:
   - Read
   - Write

@@ -1,6 +1,6 @@
 ---
 name: product-data-import
-description: "Normalize supplied FF&E information and record accepted document-job inputs with exact product tags and source hashes. Use for intake or corrections; reusable library saves and schedule adoption go to their record owners."
+description: "Normaliser les informations FF&E fournies et enregistrer les entrées acceptées de travaux documentaires avec des étiquettes produit exactes et des empreintes de source. Utiliser pour l'intégration ou les corrections ; les enregistrements dans la bibliothèque réutilisable et l'adoption de calendrier relèvent de leurs propriétaires."
 allowed-tools:
   - Read
   - Write

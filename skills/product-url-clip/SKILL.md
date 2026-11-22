@@ -1,6 +1,6 @@
 ---
 name: product-url-clip
-description: "Capture one supplied product URL as auditable, unadopted FF&E evidence and inspect its retained history. Use to clip a page or review prior captures; not to save a library product or adopt a schedule item."
+description: "Capturer une URL produit fournie comme preuve FF&E vérifiable et non adoptée, et consulter son historique conservé. Utiliser pour capturer une page ou examiner des captures antérieures ; ne pas utiliser pour enregistrer un produit de bibliothèque ou adopter un élément de calendrier."
 allowed-tools:
   - Read
   - Write

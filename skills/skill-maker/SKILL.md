@@ -1,6 +1,6 @@
 ---
 name: skill-maker
-description: "Create or update an Arch Studio skill for Codex or Claude Code using the host's native skill maker when available, with Arch Studio governance and validation. Use when asked to create, package, adapt or revise a reusable skill."
+description: "Créer ou mettre à jour un skill Arch Studio pour Codex ou Claude Code, en utilisant le créateur de skills natif de l'hôte lorsqu'il existe, avec la gouvernance et la validation d'Arch Studio. Utiliser pour créer, empaqueter, adapter ou réviser un skill réutilisable."
 allowed-tools:
   - Read
   - Write

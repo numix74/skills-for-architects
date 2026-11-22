@@ -1,6 +1,6 @@
 ---
 name: meeting-minutes
-description: "Turn supplied meeting notes or transcripts into sourced minutes, keeping discussion, statements, confirmed/proposed decisions and proposed actions distinct."
+description: "Transformer des notes ou des transcriptions de réunion en compte rendu sourcé, en distinguant clairement discussions, déclarations, décisions confirmées ou proposées et actions proposées."
 allowed-tools:
   - Read
   - Write

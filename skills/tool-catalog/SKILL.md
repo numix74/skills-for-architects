@@ -1,6 +1,6 @@
 ---
 name: tool-catalog
-description: "Show Arch Studio help, available skills, agents and host-specific commands. Use for help, how do I use Arch Studio, what is Norma, or a capability directory."
+description: "Afficher l'aide d'Arch Studio, les skills et agents disponibles, et les commandes propres à chaque hôte. Utiliser pour l'aide, « comment utiliser Arch Studio », « qu'est-ce que Norma » ou un répertoire des capacités."
 allowed-tools:
   - Read
 ---

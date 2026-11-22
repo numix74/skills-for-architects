@@ -1,6 +1,6 @@
 ---
 name: occupancy-calculator
-description: "Calculate code occupant loads by area with gross/net factors and jurisdiction checks. Use for \"how many people can this space hold,\" IBC Table 1004.5, egress inputs, or occupancy-load reports; not for workplace headcount planning."
+description: "Calculer les charges d'occupation réglementaires par surface avec les facteurs brut et net et les contrôles de juridiction. Utiliser pour « combien de personnes peut contenir cet espace », le tableau IBC 1004.5, les données d'issues ou les rapports de charge d'occupation ; ne pas utiliser pour la planification des effectifs de bureau."
 allowed-tools:
   - Read
   - Write

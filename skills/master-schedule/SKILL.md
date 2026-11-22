@@ -1,6 +1,6 @@
 ---
 name: master-schedule
-description: "Adopt, read, reconcile or revise project FF&E item and schedule records with permanent identities and exact revision pins; preserve native workbook views and recover new artifacts."
+description: "Adopter, lire, réconcilier ou réviser les fiches d'éléments FF&E et de calendriers de projet avec des identités permanentes et des révisions exactes ; préserver les vues natives des classeurs et récupérer les nouveaux artefacts."
 allowed-tools:
   - Read
   - Write

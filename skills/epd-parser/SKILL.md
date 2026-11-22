@@ -1,6 +1,6 @@
 ---
 name: epd-parser
-description: "Extract GWP, life-cycle stages, certifications, and impact metrics from an EPD PDF. Use when given a declaration to parse; not to find or compare EPDs."
+description: "Extraire le GWP, les étapes du cycle de vie, les certifications et les indicateurs d'impact d'une FDES au format PDF. Utiliser lorsqu'une déclaration est fournie à analyser ; ne pas utiliser pour rechercher ou comparer des FDES."
 allowed-tools:
   - Read
   - Write

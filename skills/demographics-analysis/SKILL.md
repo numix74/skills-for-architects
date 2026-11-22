@@ -1,6 +1,6 @@
 ---
 name: demographics-analysis
-description: "Research population, income, age, housing, and employment around a site. Use for census, demographic, or local-market questions tied to a location."
+description: "Rechercher la population, les revenus, l'âge, le logement et l'emploi autour d'un site. Utiliser pour les questions de recensement, de démographie ou de marché local liées à une localisation."
 allowed-tools:
   - WebSearch
   - WebFetch

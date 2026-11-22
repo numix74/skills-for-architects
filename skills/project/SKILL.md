@@ -1,6 +1,6 @@
 ---
 name: project
-description: "Initialize or inspect a project, maintain sourced current facts and record durable decisions. Use for project context or remember-this requests; other record types retain their owners."
+description: "Initialiser ou inspecter un projet, tenir à jour les faits courants sourcés et consigner les décisions durables. Utiliser pour le contexte de projet ou les demandes « retiens ceci » ; les autres types d'enregistrements restent à leurs propriétaires."
 allowed-tools:
   - Read
   - Write

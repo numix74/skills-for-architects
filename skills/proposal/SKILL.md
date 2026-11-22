@@ -1,6 +1,6 @@
 ---
 name: proposal
-description: "Draft and register project proposals, protect issued terms, and record explicitly evidenced commercial lifecycle changes. Sending messages is separate authorization."
+description: "Rédiger et enregistrer des propositions de projet, protéger les conditions émises et consigner les évolutions commerciales explicitement documentées. L'envoi de messages constitue une autorisation distincte."
 allowed-tools:
   - Read
   - Write

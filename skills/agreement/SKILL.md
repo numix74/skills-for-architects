@@ -1,6 +1,6 @@
 ---
 name: agreement
-description: "Maintain sourced agreement context and scope in PROJECT.md, cite registered contracts/proposals, and record amendments without imposing a commercial workflow."
+description: "Tenir à jour le contexte et le périmètre contractuel sourcés dans PROJECT.md, citer les contrats et propositions enregistrés, et consigner les avenants sans imposer de flux commercial."
 allowed-tools:
   - Read
   - Write

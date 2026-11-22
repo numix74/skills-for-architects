@@ -1,6 +1,6 @@
 ---
 name: timetracker
-description: "Reconstruct evidence-based work descriptions and append user-confirmed durations to TIME.csv. Use for time logging and corrections; never infer hours or billing from activity."
+description: "Reconstruire des descriptions de travail fondées sur des preuves et ajouter à TIME.csv les durées confirmées par l'utilisateur. Utiliser pour la saisie des temps et les corrections ; ne jamais déduire des heures ou une facturation à partir de l'activité."
 allowed-tools:
   - Read
   - Write

@@ -1,6 +1,6 @@
 ---
 name: norma-support
-description: "Help users connect Arch Studio, understand its access and memory, choose a first workflow, and troubleshoot from reported evidence. General architecture and project execution stays with its owning skill."
+description: "Aider les utilisateurs à connecter Arch Studio, comprendre ses accès et sa mémoire, choisir un premier flux de travail et résoudre les problèmes à partir de preuves signalées. Le travail d'architecture général et l'exécution de projet restent au skill qui en est propriétaire."
 allowed-tools:
   - Read
   - Glob

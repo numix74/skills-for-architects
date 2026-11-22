@@ -1,6 +1,6 @@
 ---
 name: mobility-analysis
-description: "Research transit, walking, cycling, pedestrian infrastructure, and airport access for a site. Use for mobility, accessibility, or walkability questions tied to a location."
+description: "Rechercher les transports en commun, la marche, le vélo, les infrastructures piétonnes et l'accès aux aéroports d'un site. Utiliser pour les questions de mobilité, d'accessibilité ou de marchabilité liées à une localisation."
 allowed-tools:
   - WebSearch
   - WebFetch

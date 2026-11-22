@@ -1,6 +1,6 @@
 ---
 name: architecture-knowledge
-description: "Explain US architecture professional-practice terms, phases, deliverables, roles, delivery methods, AIA contract families, CSI documentation systems, or NCS at a high level. Use for questions such as “what is a CD set?” or “what does 50% CDs mean?”; do not use for code/jurisdiction, outline-spec, agreement-scope, or work-plan work."
+description: "Expliquer à haut niveau les termes de pratique professionnelle en architecture aux États-Unis, les phases, livrables, rôles, modes de livraison, familles de contrats AIA, systèmes de documentation CSI ou NCS. Utiliser pour des questions comme « qu'est-ce qu'un CD set ? » ; ne pas utiliser pour le code et la juridiction, la spécification détaillée, le périmètre contractuel ou le plan de travail."
 allowed-tools:
   - Read
   - Grep

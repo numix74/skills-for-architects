@@ -1,6 +1,6 @@
 ---
 name: product-audit
-description: "Audit a product, selection or FF&E schedule against sourced evidence and flag discrepancies, unknowns and stale specifications. Use to check product data; not to repair records, certify compliance or generate cut sheets."
+description: "Auditer un produit, une sélection ou un calendrier FF&E par rapport à des preuves sourcées, et signaler les écarts, inconnues et spécifications périmées. Utiliser pour vérifier des données produit ; ne pas utiliser pour corriger des fiches, certifier une conformité ou générer des fiches techniques."
 allowed-tools:
   - Read
   - Write

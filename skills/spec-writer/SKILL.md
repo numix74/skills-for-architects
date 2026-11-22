@@ -1,6 +1,6 @@
 ---
 name: spec-writer
-description: "Draft Project Manual specification sections from accepted project requirements using CSI MasterFormat identities, three-part sections and review flags. Use for design requirements; use product-cut-sheet for source-faithful product entries and epd-to-spec for EPD requirements."
+description: "Rédiger des sections du Cahier des clauses techniques particulières (CCTP, format CSI MasterFormat) à partir des exigences de projet validées, avec des identités de section, des sections en trois parties et des points de relecture. Utiliser pour les exigences de conception ; utiliser product-cut-sheet pour les fiches produit fidèles aux sources et epd-to-spec pour les exigences FDES."
 allowed-tools:
   - Read
   - Write
