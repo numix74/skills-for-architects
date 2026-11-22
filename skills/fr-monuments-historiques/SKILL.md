@@ -1,6 +1,6 @@
 ---
 name: fr-monuments-historiques
-description: "Check whether a France building is landmarked or in a historic district using LPC data. Use when the user asks \"is this building landmarked\", whether a site sits in a historic district, or whether LPC review applies. France only."
+description: "Vérifier si un bâtiment est classé ou inscrit aux Monuments historiques, ou situé dans un périmètre protégé (abords, SPR). France uniquement."
 allowed-tools:
   - WebFetch
   - Write

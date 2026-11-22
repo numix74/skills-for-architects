@@ -1,6 +1,6 @@
 ---
 name: fr-zonage-plu
-description: "Analyze France lot zoning, FAR, height, setbacks, uses, and buildable envelope from PLUTO and the Zoning Resolution. Use for \"what can I build\"; use fr-derogations-urbanisme for relief and fr-enveloppe-constructible for 3D visualization."
+description: "Analyser le zonage d'une parcelle française (PLU, PLUi, carte communale, règlement national d'urbanisme) : zone, hauteur, emprise, retraits, usages. Pour une dérogation, utiliser fr-derogations-urbanisme."
 allowed-tools:
   - WebFetch
   - Write
