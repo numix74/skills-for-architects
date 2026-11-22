@@ -915,9 +915,9 @@
       }
     },
     {
-      "id": "skill:nyc-acris",
+      "id": "skill:fr-dvf-transactions",
       "category": "skills",
-      "path": "skills/nyc-acris/SKILL.md",
+      "path": "skills/fr-dvf-transactions/SKILL.md",
       "owner": "Arch Studio maintainers",
       "execution": "instructions",
       "dependencies": [
@@ -925,7 +925,7 @@
         "knowledge:sources"
       ],
       "capability": {
-        "description": "Look up NYC ACRIS deeds, mortgages, liens, sales, and ownership history. Use for property transactions or recorded ownership; not permits or violations.",
+        "description": "Rechercher les transactions immobilières DVF (ventes, prix, surfaces) autour d'une parcelle ou dans une commune française. Pour l'historique des ventes uniquement, pas les permis ni les infractions.",
         "triggers": [
           "research NYC recorded-property documents evidence",
           "prepare a sourced NYC recorded-property documents report"
@@ -950,10 +950,8 @@
           "docs/geographic-applicability.md",
           "corpus/geographic-applicability.json",
           "corpus/sources/catalog.json",
-          "skills/nyc-acris/SKILL.md",
-          "skills/nyc-acris/host-contract.json",
-          "skills/nyc-property-report/pluto-resolution.md",
-          "skills/nyc-property-report/socrata-reference.md"
+          "skills/fr-dvf-transactions/SKILL.md",
+          "skills/fr-dvf-transactions/host-contract.json"
         ],
         "conditionalReferences": [
           {
@@ -976,13 +974,13 @@
             "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
           }
         ],
-        "hostContract": "skills/nyc-acris/host-contract.json"
+        "hostContract": "skills/fr-dvf-transactions/host-contract.json"
       }
     },
     {
-      "id": "skill:nyc-bsa",
+      "id": "skill:fr-derogations-urbanisme",
       "category": "skills",
-      "path": "skills/nyc-bsa/SKILL.md",
+      "path": "skills/fr-derogations-urbanisme/SKILL.md",
       "owner": "Arch Studio maintainers",
       "execution": "instructions",
       "dependencies": [
@@ -990,7 +988,7 @@
         "knowledge:sources"
       ],
       "capability": {
-        "description": "Look up NYC BSA variances, special permits, and appeals that modify as-of-right zoning. Use for zoning relief; use zoning-analysis-nyc for base controls.",
+        "description": "Rechercher les dérogations aux règles d'urbanisme, les permis valant dérogation et les recours contre des autorisations qui modifient le zonage. Pour les règles de base, utiliser fr-zonage-plu.",
         "triggers": [
           "research NYC BSA decisions evidence",
           "prepare a sourced NYC BSA decisions report"
@@ -1015,10 +1013,8 @@
           "docs/geographic-applicability.md",
           "corpus/geographic-applicability.json",
           "corpus/sources/catalog.json",
-          "skills/nyc-bsa/SKILL.md",
-          "skills/nyc-bsa/host-contract.json",
-          "skills/nyc-property-report/pluto-resolution.md",
-          "skills/nyc-property-report/socrata-reference.md"
+          "skills/fr-derogations-urbanisme/SKILL.md",
+          "skills/fr-derogations-urbanisme/host-contract.json"
         ],
         "conditionalReferences": [
           {
@@ -1041,13 +1037,13 @@
             "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
           }
         ],
-        "hostContract": "skills/nyc-bsa/host-contract.json"
+        "hostContract": "skills/fr-derogations-urbanisme/host-contract.json"
       }
     },
     {
-      "id": "skill:nyc-dob-permits",
+      "id": "skill:fr-autorisations-urbanisme",
       "category": "skills",
-      "path": "skills/nyc-dob-permits/SKILL.md",
+      "path": "skills/fr-autorisations-urbanisme/SKILL.md",
       "owner": "Arch Studio maintainers",
       "execution": "instructions",
       "dependencies": [
@@ -1055,7 +1051,7 @@
         "knowledge:sources"
       ],
       "capability": {
-        "description": "Look up NYC DOB permits and new-building, alteration, or demolition job filings. Use for filed or permitted work and renovation history; use nyc-dob-violations for violations.",
+        "description": "Rechercher les permis de construire, déclarations préalables, permis d'aménager et permis de démolir (base Sitadel) pour une commune ou une parcelle. Pour les infractions, utiliser fr-infractions-urbanisme.",
         "triggers": [
           "research NYC building permit evidence",
           "prepare a sourced NYC building permit report"
@@ -1080,10 +1076,8 @@
           "docs/geographic-applicability.md",
           "corpus/geographic-applicability.json",
           "corpus/sources/catalog.json",
-          "skills/nyc-dob-permits/SKILL.md",
-          "skills/nyc-dob-permits/host-contract.json",
-          "skills/nyc-property-report/pluto-resolution.md",
-          "skills/nyc-property-report/socrata-reference.md"
+          "skills/fr-autorisations-urbanisme/SKILL.md",
+          "skills/fr-autorisations-urbanisme/host-contract.json"
         ],
         "conditionalReferences": [
           {
@@ -1106,13 +1100,13 @@
             "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
           }
         ],
-        "hostContract": "skills/nyc-dob-permits/host-contract.json"
+        "hostContract": "skills/fr-autorisations-urbanisme/host-contract.json"
       }
     },
     {
-      "id": "skill:nyc-dob-violations",
+      "id": "skill:fr-infractions-urbanisme",
       "category": "skills",
-      "path": "skills/nyc-dob-violations/SKILL.md",
+      "path": "skills/fr-infractions-urbanisme/SKILL.md",
       "owner": "Arch Studio maintainers",
       "execution": "instructions",
       "dependencies": [
@@ -1120,7 +1114,7 @@
         "knowledge:sources"
       ],
       "capability": {
-        "description": "Look up open and resolved DOB and ECB violations for any NYC building, with class, status, and penalty detail. Use when the user asks whether a building has violations, stop-work orders, or outstanding ECB penalties. NYC only; for housing-code violations use /as:nyc-hpd.",
+        "description": "Vérifier les infractions et procédures d'urbanisme (procès-verbaux, mises en demeure, arrêtés) concernant un bâtiment. Aucune base nationale ouverte : la donnée s'obtient souvent en mairie.",
         "triggers": [
           "research NYC DOB violations evidence",
           "prepare a sourced NYC DOB violations report"
@@ -1145,10 +1139,8 @@
           "docs/geographic-applicability.md",
           "corpus/geographic-applicability.json",
           "corpus/sources/catalog.json",
-          "skills/nyc-dob-violations/SKILL.md",
-          "skills/nyc-dob-violations/host-contract.json",
-          "skills/nyc-property-report/pluto-resolution.md",
-          "skills/nyc-property-report/socrata-reference.md"
+          "skills/fr-infractions-urbanisme/SKILL.md",
+          "skills/fr-infractions-urbanisme/host-contract.json"
         ],
         "conditionalReferences": [
           {
@@ -1171,13 +1163,13 @@
             "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
           }
         ],
-        "hostContract": "skills/nyc-dob-violations/host-contract.json"
+        "hostContract": "skills/fr-infractions-urbanisme/host-contract.json"
       }
     },
     {
-      "id": "skill:nyc-hpd",
+      "id": "skill:fr-habitat-insalubre",
       "category": "skills",
-      "path": "skills/nyc-hpd/SKILL.md",
+      "path": "skills/fr-habitat-insalubre/SKILL.md",
       "owner": "Arch Studio maintainers",
       "execution": "instructions",
       "dependencies": [
@@ -1185,7 +1177,7 @@
         "knowledge:sources"
       ],
       "capability": {
-        "description": "Look up HPD violations, complaints, and building registration for NYC residential buildings. Use when the user asks about housing-code violations, tenant complaints, or HPD registration at an address. NYC only; for DOB and ECB violations use /as:nyc-dob-violations.",
+        "description": "Vérifier les arrêtés d'insalubrité, de péril et les signalements d'habitat indigne concernant un logement. Pour l'urbanisme, utiliser fr-infractions-urbanisme.",
         "triggers": [
           "research NYC HPD housing evidence",
           "prepare a sourced NYC HPD housing report"
@@ -1210,10 +1202,8 @@
           "docs/geographic-applicability.md",
           "corpus/geographic-applicability.json",
           "corpus/sources/catalog.json",
-          "skills/nyc-hpd/SKILL.md",
-          "skills/nyc-hpd/host-contract.json",
-          "skills/nyc-property-report/pluto-resolution.md",
-          "skills/nyc-property-report/socrata-reference.md"
+          "skills/fr-habitat-insalubre/SKILL.md",
+          "skills/fr-habitat-insalubre/host-contract.json"
         ],
         "conditionalReferences": [
           {
@@ -1236,13 +1226,13 @@
             "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
           }
         ],
-        "hostContract": "skills/nyc-hpd/host-contract.json"
+        "hostContract": "skills/fr-habitat-insalubre/host-contract.json"
       }
     },
     {
-      "id": "skill:nyc-landmarks",
+      "id": "skill:fr-monuments-historiques",
       "category": "skills",
-      "path": "skills/nyc-landmarks/SKILL.md",
+      "path": "skills/fr-monuments-historiques/SKILL.md",
       "owner": "Arch Studio maintainers",
       "execution": "instructions",
       "dependencies": [
@@ -1275,10 +1265,8 @@
           "docs/geographic-applicability.md",
           "corpus/geographic-applicability.json",
           "corpus/sources/catalog.json",
-          "skills/nyc-landmarks/SKILL.md",
-          "skills/nyc-landmarks/host-contract.json",
-          "skills/nyc-property-report/pluto-resolution.md",
-          "skills/nyc-property-report/socrata-reference.md"
+          "skills/fr-monuments-historiques/SKILL.md",
+          "skills/fr-monuments-historiques/host-contract.json"
         ],
         "conditionalReferences": [
           {
@@ -1301,13 +1289,13 @@
             "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
           }
         ],
-        "hostContract": "skills/nyc-landmarks/host-contract.json"
+        "hostContract": "skills/fr-monuments-historiques/host-contract.json"
       }
     },
     {
-      "id": "skill:nyc-property-report",
+      "id": "skill:fr-rapport-foncier",
       "category": "skills",
-      "path": "skills/nyc-property-report/SKILL.md",
+      "path": "skills/fr-rapport-foncier/SKILL.md",
       "owner": "Arch Studio maintainers",
       "execution": "instructions",
       "dependencies": [
@@ -1315,7 +1303,7 @@
         "knowledge:sources"
       ],
       "capability": {
-        "description": "Compile NYC landmarks, DOB, ACRIS, HPD, and BSA findings into one property due-diligence report. Use for a full report; use individual NYC skills for one dataset.",
+        "description": "Compiler transactions DVF, autorisations d'urbanisme, monuments historiques, zonage PLU et risques en un rapport de diligence foncière française.",
         "triggers": [
           "research combined NYC property evidence",
           "prepare a sourced combined NYC property report"
@@ -1340,10 +1328,8 @@
           "docs/geographic-applicability.md",
           "corpus/geographic-applicability.json",
           "corpus/sources/catalog.json",
-          "skills/nyc-property-report/SKILL.md",
-          "skills/nyc-property-report/host-contract.json",
-          "skills/nyc-property-report/pluto-resolution.md",
-          "skills/nyc-property-report/socrata-reference.md"
+          "skills/fr-rapport-foncier/SKILL.md",
+          "skills/fr-rapport-foncier/host-contract.json"
         ],
         "conditionalReferences": [
           {
@@ -1366,31 +1352,31 @@
             "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
           },
           {
-            "target": "skill:nyc-acris",
+            "target": "skill:fr-dvf-transactions",
             "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
           },
           {
-            "target": "skill:nyc-dob-permits",
+            "target": "skill:fr-autorisations-urbanisme",
             "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
           },
           {
-            "target": "skill:nyc-dob-violations",
+            "target": "skill:fr-infractions-urbanisme",
             "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
           },
           {
-            "target": "skill:nyc-hpd",
+            "target": "skill:fr-habitat-insalubre",
             "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
           },
           {
-            "target": "skill:nyc-landmarks",
+            "target": "skill:fr-monuments-historiques",
             "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
           },
           {
-            "target": "skill:nyc-bsa",
+            "target": "skill:fr-derogations-urbanisme",
             "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
           }
         ],
-        "hostContract": "skills/nyc-property-report/host-contract.json"
+        "hostContract": "skills/fr-rapport-foncier/host-contract.json"
       }
     },
     {
@@ -3041,9 +3027,9 @@
       }
     },
     {
-      "id": "skill:zoning-analysis-nyc",
+      "id": "skill:fr-zonage-plu",
       "category": "skills",
-      "path": "skills/zoning-analysis-nyc/SKILL.md",
+      "path": "skills/fr-zonage-plu/SKILL.md",
       "owner": "Arch Studio maintainers",
       "execution": "instructions",
       "dependencies": [
@@ -3052,11 +3038,11 @@
         "knowledge:host-contracts"
       ],
       "capability": {
-        "description": "Analyze NYC lot zoning, FAR, height, setbacks, uses, and buildable envelope from PLUTO and the Zoning Resolution. Use for \"what can I build\"; use nyc-bsa for relief and zoning-envelope for 3D visualization.",
-        "hostContract": "skills/zoning-analysis-nyc/host-contract.json",
+        "description": "Analyze NYC lot zoning, FAR, height, setbacks, uses, and buildable envelope from PLUTO and the Zoning Resolution. Use for \"what can I build\"; use fr-derogations-urbanisme for relief and fr-enveloppe-constructible for 3D visualization.",
+        "hostContract": "skills/fr-zonage-plu/host-contract.json",
         "executionOwner": "host",
         "triggers": [
-          "Analyze NYC lot zoning, FAR, height, setbacks, uses, and buildable envelope from PLUTO and the Zoning Resolution. Use for \"what can I build\"; use nyc-bsa for relief and zoning-envelope for 3D visualization."
+          "Analyze NYC lot zoning, FAR, height, setbacks, uses, and buildable envelope from PLUTO and the Zoning Resolution. Use for \"what can I build\"; use fr-derogations-urbanisme for relief and fr-enveloppe-constructible for 3D visualization."
         ],
         "exclusions": [
           "No Arch Studio executable acquisition or unrequested record ownership"
@@ -3068,8 +3054,8 @@
           "Requested verified native result with actual source evidence and unresolved limitations"
         ],
         "references": [
-          "skills/zoning-analysis-nyc/SKILL.md",
-          "skills/zoning-analysis-nyc/host-contract.json",
+          "skills/fr-zonage-plu/SKILL.md",
+          "skills/fr-zonage-plu/host-contract.json",
           "docs/host-harness-contract.md",
           "docs/host-adapters.md",
           "docs/completion-reporting.md",
@@ -3091,21 +3077,21 @@
       }
     },
     {
-      "id": "skill:zoning-envelope",
+      "id": "skill:fr-enveloppe-constructible",
       "category": "skills",
-      "path": "skills/zoning-envelope/SKILL.md",
+      "path": "skills/fr-enveloppe-constructible/SKILL.md",
       "owner": "Arch Studio maintainers",
       "execution": "instructions",
       "dependencies": [
-        "skill:zoning-analysis-nyc",
+        "skill:fr-zonage-plu",
         "knowledge:host-contracts"
       ],
       "capability": {
-        "description": "Generate interactive 3D zoning envelope viewers from zoning analysis reports. Use when the user asks to \"visualize the zoning envelope\" or see buildable massing in 3D, typically after /as:zoning-analysis-nyc. Requires a zoning analysis report as input.",
-        "hostContract": "skills/zoning-envelope/host-contract.json",
+        "description": "Generate interactive 3D zoning envelope viewers from zoning analysis reports. Use when the user asks to \"visualize the zoning envelope\" or see buildable massing in 3D, typically after /as:fr-zonage-plu. Requires a zoning analysis report as input.",
+        "hostContract": "skills/fr-enveloppe-constructible/host-contract.json",
         "executionOwner": "host",
         "triggers": [
-          "Generate interactive 3D zoning envelope viewers from zoning analysis reports. Use when the user asks to \"visualize the zoning envelope\" or see buildable massing in 3D, typically after /as:zoning-analysis-nyc. Requires a zoning analysis report as input."
+          "Generate interactive 3D zoning envelope viewers from zoning analysis reports. Use when the user asks to \"visualize the zoning envelope\" or see buildable massing in 3D, typically after /as:fr-zonage-plu. Requires a zoning analysis report as input."
         ],
         "exclusions": [
           "No executable acquisition or unrequested canonical mutation"
@@ -3117,13 +3103,13 @@
           "Verified requested artifact, preserved source evidence and explicit incomplete checks"
         ],
         "references": [
-          "skills/zoning-envelope/SKILL.md",
+          "skills/fr-enveloppe-constructible/SKILL.md",
           "docs/geographic-applicability.md",
           "corpus/geographic-applicability.json",
           "rules/professional-disclaimer.md",
           "docs/workspace-model.md",
           "docs/completion-reporting.md",
-          "skills/zoning-envelope/host-contract.json",
+          "skills/fr-enveloppe-constructible/host-contract.json",
           "docs/host-harness-contract.md",
           "docs/host-adapters.md",
           "corpus/host-contracts.json"
@@ -4167,31 +4153,31 @@
             "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
           },
           {
-            "target": "skill:nyc-acris",
+            "target": "skill:fr-dvf-transactions",
             "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
           },
           {
-            "target": "skill:nyc-bsa",
+            "target": "skill:fr-derogations-urbanisme",
             "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
           },
           {
-            "target": "skill:nyc-dob-permits",
+            "target": "skill:fr-autorisations-urbanisme",
             "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
           },
           {
-            "target": "skill:nyc-dob-violations",
+            "target": "skill:fr-infractions-urbanisme",
             "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
           },
           {
-            "target": "skill:nyc-hpd",
+            "target": "skill:fr-habitat-insalubre",
             "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
           },
           {
-            "target": "skill:nyc-landmarks",
+            "target": "skill:fr-monuments-historiques",
             "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
           },
           {
-            "target": "skill:nyc-property-report",
+            "target": "skill:fr-rapport-foncier",
             "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
           },
           {
@@ -4319,11 +4305,11 @@
             "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
           },
           {
-            "target": "skill:zoning-analysis-nyc",
+            "target": "skill:fr-zonage-plu",
             "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
           },
           {
-            "target": "skill:zoning-envelope",
+            "target": "skill:fr-enveloppe-constructible",
             "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
           },
           {

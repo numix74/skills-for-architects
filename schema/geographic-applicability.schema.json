@@ -9,7 +9,7 @@
     "policy": {"const": "docs/geographic-applicability.md"},
     "components": {
       "type": "object", "minProperties": 1,
-      "additionalProperties": {"enum": ["portable", "site-research", "nyc-records", "nyc-zoning", "jurisdiction-calculation", "input-report", "us-explanation", "source-health"]}
+      "additionalProperties": {"enum": ["portable", "site-research", "nyc-records", "nyc-zoning", "france-records", "france-zoning", "jurisdiction-calculation", "input-report", "us-explanation", "source-health"]}
     },
     "references": {
       "type": "array", "minItems": 1, "maxItems": 128,

@@ -47,13 +47,13 @@ Project records form a linked graph of plain files. `/as:project` is the setup a
 
 | Skill | Description |
 |-------|-------------|
-| [`/as:nyc-landmarks`](./nyc-landmarks) | LPC landmark and historic district check |
-| [`/as:nyc-dob-permits`](./nyc-dob-permits) | DOB permit and filing history |
-| [`/as:nyc-dob-violations`](./nyc-dob-violations) | DOB and ECB violations |
-| [`/as:nyc-acris`](./nyc-acris) | ACRIS property transaction records |
-| [`/as:nyc-hpd`](./nyc-hpd) | HPD violations, complaints, and registration |
-| [`/as:nyc-bsa`](./nyc-bsa) | BSA variances and special permits |
-| [`/as:nyc-property-report`](./nyc-property-report) | Combined NYC property report |
+| [`/as:fr-monuments-historiques`](./fr-monuments-historiques) | LPC landmark and historic district check |
+| [`/as:fr-autorisations-urbanisme`](./fr-autorisations-urbanisme) | DOB permit and filing history |
+| [`/as:fr-infractions-urbanisme`](./fr-infractions-urbanisme) | DOB and ECB violations |
+| [`/as:fr-dvf-transactions`](./fr-dvf-transactions) | ACRIS property transaction records |
+| [`/as:fr-habitat-insalubre`](./fr-habitat-insalubre) | HPD violations, complaints, and registration |
+| [`/as:fr-derogations-urbanisme`](./fr-derogations-urbanisme) | BSA variances and special permits |
+| [`/as:fr-rapport-foncier`](./fr-rapport-foncier) | Combined NYC property report |
 
 ### Site and zoning
 
@@ -63,8 +63,8 @@ Project records form a linked graph of plain files. `/as:project` is the setup a
 | [`/as:mobility-analysis`](./mobility-analysis) | Transit, walkability, cycling, and pedestrian infrastructure |
 | [`/as:demographics-analysis`](./demographics-analysis) | Population, income, age, housing, and employment |
 | [`/as:site-history`](./site-history) | Neighborhood context, landmarks, activity, and planned development |
-| [`/as:zoning-analysis-nyc`](./zoning-analysis-nyc) | NYC FAR, height, setback, and use analysis |
-| [`/as:zoning-envelope`](./zoning-envelope) | Self-contained interactive 3D zoning envelope |
+| [`/as:fr-zonage-plu`](./fr-zonage-plu) | NYC FAR, height, setback, and use analysis |
+| [`/as:fr-enveloppe-constructible`](./fr-enveloppe-constructible) | Self-contained interactive 3D zoning envelope |
 
 ### Programming and specifications
 

@@ -760,6 +760,527 @@
       "hostContract": "skills/ffe-spec-book/host-contract.json"
     },
     {
+      "id": "skill:fr-autorisations-urbanisme",
+      "path": "skills/fr-autorisations-urbanisme/SKILL.md",
+      "execution": "instructions",
+      "dependencies": [
+        "knowledge:host-contracts",
+        "knowledge:sources"
+      ],
+      "description": "Rechercher les permis de construire, déclarations préalables, permis d'aménager et permis de démolir (base Sitadel) pour une commune ou une parcelle. Pour les infractions, utiliser fr-infractions-urbanisme.",
+      "triggers": [
+        "research NYC building permit evidence",
+        "prepare a sourced NYC building permit report"
+      ],
+      "exclusions": [
+        "infer jurisdiction or current source field definitions",
+        "treat unavailable or truncated results as zero or complete",
+        "adopt project facts/decisions or register documents without their owner"
+      ],
+      "inputs": [
+        "Explicit site/property/geography and selected period/domain scope; applicable original sources or authorized supplied evidence"
+      ],
+      "outputs": [
+        "Requested sourced findings/report with exact scope, counts, preserved unknowns, actual checks and material limitations"
+      ],
+      "references": [
+        "docs/host-harness-contract.md",
+        "docs/host-adapters.md",
+        "corpus/host-contracts.json",
+        "docs/workspace-model.md",
+        "docs/completion-reporting.md",
+        "docs/geographic-applicability.md",
+        "corpus/geographic-applicability.json",
+        "corpus/sources/catalog.json",
+        "skills/fr-autorisations-urbanisme/SKILL.md",
+        "skills/fr-autorisations-urbanisme/host-contract.json"
+      ],
+      "conditionalReferences": [
+        {
+          "path": "skills/project/references/context-resolution.md",
+          "when": "Only for project-bound work or a requested typed record/document owner handoff; standalone research needs no project."
+        },
+        {
+          "path": "rules/professional-disclaimer.md",
+          "when": "When regulatory/life-safety or other professionally governed output requires its exact disclaimer/marker; preserve every owner-required end block."
+        }
+      ],
+      "executionOwner": "host",
+      "handoffs": [
+        {
+          "target": "skill:project",
+          "when": "Only for proposed sourced project facts/decisions; preserve existing authorization and no silent fact adoption."
+        },
+        {
+          "target": "skill:receive",
+          "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
+        }
+      ],
+      "hostContract": "skills/fr-autorisations-urbanisme/host-contract.json"
+    },
+    {
+      "id": "skill:fr-derogations-urbanisme",
+      "path": "skills/fr-derogations-urbanisme/SKILL.md",
+      "execution": "instructions",
+      "dependencies": [
+        "knowledge:host-contracts",
+        "knowledge:sources"
+      ],
+      "description": "Rechercher les dérogations aux règles d'urbanisme, les permis valant dérogation et les recours contre des autorisations qui modifient le zonage. Pour les règles de base, utiliser fr-zonage-plu.",
+      "triggers": [
+        "research NYC BSA decisions evidence",
+        "prepare a sourced NYC BSA decisions report"
+      ],
+      "exclusions": [
+        "infer jurisdiction or current source field definitions",
+        "treat unavailable or truncated results as zero or complete",
+        "adopt project facts/decisions or register documents without their owner"
+      ],
+      "inputs": [
+        "Explicit site/property/geography and selected period/domain scope; applicable original sources or authorized supplied evidence"
+      ],
+      "outputs": [
+        "Requested sourced findings/report with exact scope, counts, preserved unknowns, actual checks and material limitations"
+      ],
+      "references": [
+        "docs/host-harness-contract.md",
+        "docs/host-adapters.md",
+        "corpus/host-contracts.json",
+        "docs/workspace-model.md",
+        "docs/completion-reporting.md",
+        "docs/geographic-applicability.md",
+        "corpus/geographic-applicability.json",
+        "corpus/sources/catalog.json",
+        "skills/fr-derogations-urbanisme/SKILL.md",
+        "skills/fr-derogations-urbanisme/host-contract.json"
+      ],
+      "conditionalReferences": [
+        {
+          "path": "skills/project/references/context-resolution.md",
+          "when": "Only for project-bound work or a requested typed record/document owner handoff; standalone research needs no project."
+        },
+        {
+          "path": "rules/professional-disclaimer.md",
+          "when": "When regulatory/life-safety or other professionally governed output requires its exact disclaimer/marker; preserve every owner-required end block."
+        }
+      ],
+      "executionOwner": "host",
+      "handoffs": [
+        {
+          "target": "skill:project",
+          "when": "Only for proposed sourced project facts/decisions; preserve existing authorization and no silent fact adoption."
+        },
+        {
+          "target": "skill:receive",
+          "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
+        }
+      ],
+      "hostContract": "skills/fr-derogations-urbanisme/host-contract.json"
+    },
+    {
+      "id": "skill:fr-dvf-transactions",
+      "path": "skills/fr-dvf-transactions/SKILL.md",
+      "execution": "instructions",
+      "dependencies": [
+        "knowledge:host-contracts",
+        "knowledge:sources"
+      ],
+      "description": "Rechercher les transactions immobilières DVF (ventes, prix, surfaces) autour d'une parcelle ou dans une commune française. Pour l'historique des ventes uniquement, pas les permis ni les infractions.",
+      "triggers": [
+        "research NYC recorded-property documents evidence",
+        "prepare a sourced NYC recorded-property documents report"
+      ],
+      "exclusions": [
+        "infer jurisdiction or current source field definitions",
+        "treat unavailable or truncated results as zero or complete",
+        "adopt project facts/decisions or register documents without their owner"
+      ],
+      "inputs": [
+        "Explicit site/property/geography and selected period/domain scope; applicable original sources or authorized supplied evidence"
+      ],
+      "outputs": [
+        "Requested sourced findings/report with exact scope, counts, preserved unknowns, actual checks and material limitations"
+      ],
+      "references": [
+        "docs/host-harness-contract.md",
+        "docs/host-adapters.md",
+        "corpus/host-contracts.json",
+        "docs/workspace-model.md",
+        "docs/completion-reporting.md",
+        "docs/geographic-applicability.md",
+        "corpus/geographic-applicability.json",
+        "corpus/sources/catalog.json",
+        "skills/fr-dvf-transactions/SKILL.md",
+        "skills/fr-dvf-transactions/host-contract.json"
+      ],
+      "conditionalReferences": [
+        {
+          "path": "skills/project/references/context-resolution.md",
+          "when": "Only for project-bound work or a requested typed record/document owner handoff; standalone research needs no project."
+        },
+        {
+          "path": "rules/professional-disclaimer.md",
+          "when": "When regulatory/life-safety or other professionally governed output requires its exact disclaimer/marker; preserve every owner-required end block."
+        }
+      ],
+      "executionOwner": "host",
+      "handoffs": [
+        {
+          "target": "skill:project",
+          "when": "Only for proposed sourced project facts/decisions; preserve existing authorization and no silent fact adoption."
+        },
+        {
+          "target": "skill:receive",
+          "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
+        }
+      ],
+      "hostContract": "skills/fr-dvf-transactions/host-contract.json"
+    },
+    {
+      "id": "skill:fr-enveloppe-constructible",
+      "path": "skills/fr-enveloppe-constructible/SKILL.md",
+      "execution": "instructions",
+      "dependencies": [
+        "skill:fr-zonage-plu",
+        "knowledge:host-contracts"
+      ],
+      "description": "Generate interactive 3D zoning envelope viewers from zoning analysis reports. Use when the user asks to \"visualize the zoning envelope\" or see buildable massing in 3D, typically after /as:fr-zonage-plu. Requires a zoning analysis report as input.",
+      "hostContract": "skills/fr-enveloppe-constructible/host-contract.json",
+      "executionOwner": "host",
+      "triggers": [
+        "Generate interactive 3D zoning envelope viewers from zoning analysis reports. Use when the user asks to \"visualize the zoning envelope\" or see buildable massing in 3D, typically after /as:fr-zonage-plu. Requires a zoning analysis report as input."
+      ],
+      "exclusions": [
+        "No executable acquisition or unrequested canonical mutation"
+      ],
+      "inputs": [
+        "Supplied task and selected source scope; exact destination only for requested persistence or application work. Load project context only when the task needs project records."
+      ],
+      "outputs": [
+        "Verified requested artifact, preserved source evidence and explicit incomplete checks"
+      ],
+      "references": [
+        "skills/fr-enveloppe-constructible/SKILL.md",
+        "docs/geographic-applicability.md",
+        "corpus/geographic-applicability.json",
+        "rules/professional-disclaimer.md",
+        "docs/workspace-model.md",
+        "docs/completion-reporting.md",
+        "skills/fr-enveloppe-constructible/host-contract.json",
+        "docs/host-harness-contract.md",
+        "docs/host-adapters.md",
+        "corpus/host-contracts.json"
+      ],
+      "conditionalReferences": [],
+      "handoffs": []
+    },
+    {
+      "id": "skill:fr-habitat-insalubre",
+      "path": "skills/fr-habitat-insalubre/SKILL.md",
+      "execution": "instructions",
+      "dependencies": [
+        "knowledge:host-contracts",
+        "knowledge:sources"
+      ],
+      "description": "Vérifier les arrêtés d'insalubrité, de péril et les signalements d'habitat indigne concernant un logement. Pour l'urbanisme, utiliser fr-infractions-urbanisme.",
+      "triggers": [
+        "research NYC HPD housing evidence",
+        "prepare a sourced NYC HPD housing report"
+      ],
+      "exclusions": [
+        "infer jurisdiction or current source field definitions",
+        "treat unavailable or truncated results as zero or complete",
+        "adopt project facts/decisions or register documents without their owner"
+      ],
+      "inputs": [
+        "Explicit site/property/geography and selected period/domain scope; applicable original sources or authorized supplied evidence"
+      ],
+      "outputs": [
+        "Requested sourced findings/report with exact scope, counts, preserved unknowns, actual checks and material limitations"
+      ],
+      "references": [
+        "docs/host-harness-contract.md",
+        "docs/host-adapters.md",
+        "corpus/host-contracts.json",
+        "docs/workspace-model.md",
+        "docs/completion-reporting.md",
+        "docs/geographic-applicability.md",
+        "corpus/geographic-applicability.json",
+        "corpus/sources/catalog.json",
+        "skills/fr-habitat-insalubre/SKILL.md",
+        "skills/fr-habitat-insalubre/host-contract.json"
+      ],
+      "conditionalReferences": [
+        {
+          "path": "skills/project/references/context-resolution.md",
+          "when": "Only for project-bound work or a requested typed record/document owner handoff; standalone research needs no project."
+        },
+        {
+          "path": "rules/professional-disclaimer.md",
+          "when": "When regulatory/life-safety or other professionally governed output requires its exact disclaimer/marker; preserve every owner-required end block."
+        }
+      ],
+      "executionOwner": "host",
+      "handoffs": [
+        {
+          "target": "skill:project",
+          "when": "Only for proposed sourced project facts/decisions; preserve existing authorization and no silent fact adoption."
+        },
+        {
+          "target": "skill:receive",
+          "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
+        }
+      ],
+      "hostContract": "skills/fr-habitat-insalubre/host-contract.json"
+    },
+    {
+      "id": "skill:fr-infractions-urbanisme",
+      "path": "skills/fr-infractions-urbanisme/SKILL.md",
+      "execution": "instructions",
+      "dependencies": [
+        "knowledge:host-contracts",
+        "knowledge:sources"
+      ],
+      "description": "Vérifier les infractions et procédures d'urbanisme (procès-verbaux, mises en demeure, arrêtés) concernant un bâtiment. Aucune base nationale ouverte : la donnée s'obtient souvent en mairie.",
+      "triggers": [
+        "research NYC DOB violations evidence",
+        "prepare a sourced NYC DOB violations report"
+      ],
+      "exclusions": [
+        "infer jurisdiction or current source field definitions",
+        "treat unavailable or truncated results as zero or complete",
+        "adopt project facts/decisions or register documents without their owner"
+      ],
+      "inputs": [
+        "Explicit site/property/geography and selected period/domain scope; applicable original sources or authorized supplied evidence"
+      ],
+      "outputs": [
+        "Requested sourced findings/report with exact scope, counts, preserved unknowns, actual checks and material limitations"
+      ],
+      "references": [
+        "docs/host-harness-contract.md",
+        "docs/host-adapters.md",
+        "corpus/host-contracts.json",
+        "docs/workspace-model.md",
+        "docs/completion-reporting.md",
+        "docs/geographic-applicability.md",
+        "corpus/geographic-applicability.json",
+        "corpus/sources/catalog.json",
+        "skills/fr-infractions-urbanisme/SKILL.md",
+        "skills/fr-infractions-urbanisme/host-contract.json"
+      ],
+      "conditionalReferences": [
+        {
+          "path": "skills/project/references/context-resolution.md",
+          "when": "Only for project-bound work or a requested typed record/document owner handoff; standalone research needs no project."
+        },
+        {
+          "path": "rules/professional-disclaimer.md",
+          "when": "When regulatory/life-safety or other professionally governed output requires its exact disclaimer/marker; preserve every owner-required end block."
+        }
+      ],
+      "executionOwner": "host",
+      "handoffs": [
+        {
+          "target": "skill:project",
+          "when": "Only for proposed sourced project facts/decisions; preserve existing authorization and no silent fact adoption."
+        },
+        {
+          "target": "skill:receive",
+          "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
+        }
+      ],
+      "hostContract": "skills/fr-infractions-urbanisme/host-contract.json"
+    },
+    {
+      "id": "skill:fr-monuments-historiques",
+      "path": "skills/fr-monuments-historiques/SKILL.md",
+      "execution": "instructions",
+      "dependencies": [
+        "knowledge:host-contracts",
+        "knowledge:sources"
+      ],
+      "description": "Check whether a NYC building is landmarked or in a historic district using LPC data. Use when the user asks \"is this building landmarked\", whether a site sits in a historic district, or whether LPC review applies. NYC only.",
+      "triggers": [
+        "research NYC landmark evidence",
+        "prepare a sourced NYC landmark report"
+      ],
+      "exclusions": [
+        "infer jurisdiction or current source field definitions",
+        "treat unavailable or truncated results as zero or complete",
+        "adopt project facts/decisions or register documents without their owner"
+      ],
+      "inputs": [
+        "Explicit site/property/geography and selected period/domain scope; applicable original sources or authorized supplied evidence"
+      ],
+      "outputs": [
+        "Requested sourced findings/report with exact scope, counts, preserved unknowns, actual checks and material limitations"
+      ],
+      "references": [
+        "docs/host-harness-contract.md",
+        "docs/host-adapters.md",
+        "corpus/host-contracts.json",
+        "docs/workspace-model.md",
+        "docs/completion-reporting.md",
+        "docs/geographic-applicability.md",
+        "corpus/geographic-applicability.json",
+        "corpus/sources/catalog.json",
+        "skills/fr-monuments-historiques/SKILL.md",
+        "skills/fr-monuments-historiques/host-contract.json"
+      ],
+      "conditionalReferences": [
+        {
+          "path": "skills/project/references/context-resolution.md",
+          "when": "Only for project-bound work or a requested typed record/document owner handoff; standalone research needs no project."
+        },
+        {
+          "path": "rules/professional-disclaimer.md",
+          "when": "When regulatory/life-safety or other professionally governed output requires its exact disclaimer/marker; preserve every owner-required end block."
+        }
+      ],
+      "executionOwner": "host",
+      "handoffs": [
+        {
+          "target": "skill:project",
+          "when": "Only for proposed sourced project facts/decisions; preserve existing authorization and no silent fact adoption."
+        },
+        {
+          "target": "skill:receive",
+          "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
+        }
+      ],
+      "hostContract": "skills/fr-monuments-historiques/host-contract.json"
+    },
+    {
+      "id": "skill:fr-rapport-foncier",
+      "path": "skills/fr-rapport-foncier/SKILL.md",
+      "execution": "instructions",
+      "dependencies": [
+        "knowledge:host-contracts",
+        "knowledge:sources"
+      ],
+      "description": "Compiler transactions DVF, autorisations d'urbanisme, monuments historiques, zonage PLU et risques en un rapport de diligence foncière française.",
+      "triggers": [
+        "research combined NYC property evidence",
+        "prepare a sourced combined NYC property report"
+      ],
+      "exclusions": [
+        "infer jurisdiction or current source field definitions",
+        "treat unavailable or truncated results as zero or complete",
+        "adopt project facts/decisions or register documents without their owner"
+      ],
+      "inputs": [
+        "Explicit site/property/geography and selected period/domain scope; applicable original sources or authorized supplied evidence"
+      ],
+      "outputs": [
+        "Requested sourced findings/report with exact scope, counts, preserved unknowns, actual checks and material limitations"
+      ],
+      "references": [
+        "docs/host-harness-contract.md",
+        "docs/host-adapters.md",
+        "corpus/host-contracts.json",
+        "docs/workspace-model.md",
+        "docs/completion-reporting.md",
+        "docs/geographic-applicability.md",
+        "corpus/geographic-applicability.json",
+        "corpus/sources/catalog.json",
+        "skills/fr-rapport-foncier/SKILL.md",
+        "skills/fr-rapport-foncier/host-contract.json"
+      ],
+      "conditionalReferences": [
+        {
+          "path": "skills/project/references/context-resolution.md",
+          "when": "Only for project-bound work or a requested typed record/document owner handoff; standalone research needs no project."
+        },
+        {
+          "path": "rules/professional-disclaimer.md",
+          "when": "When regulatory/life-safety or other professionally governed output requires its exact disclaimer/marker; preserve every owner-required end block."
+        }
+      ],
+      "executionOwner": "host",
+      "handoffs": [
+        {
+          "target": "skill:project",
+          "when": "Only for proposed sourced project facts/decisions; preserve existing authorization and no silent fact adoption."
+        },
+        {
+          "target": "skill:receive",
+          "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
+        },
+        {
+          "target": "skill:fr-dvf-transactions",
+          "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
+        },
+        {
+          "target": "skill:fr-autorisations-urbanisme",
+          "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
+        },
+        {
+          "target": "skill:fr-infractions-urbanisme",
+          "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
+        },
+        {
+          "target": "skill:fr-habitat-insalubre",
+          "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
+        },
+        {
+          "target": "skill:fr-monuments-historiques",
+          "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
+        },
+        {
+          "target": "skill:fr-derogations-urbanisme",
+          "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
+        }
+      ],
+      "hostContract": "skills/fr-rapport-foncier/host-contract.json"
+    },
+    {
+      "id": "skill:fr-zonage-plu",
+      "path": "skills/fr-zonage-plu/SKILL.md",
+      "execution": "instructions",
+      "dependencies": [
+        "knowledge:sources",
+        "knowledge:jurisdictions",
+        "knowledge:host-contracts"
+      ],
+      "description": "Analyze NYC lot zoning, FAR, height, setbacks, uses, and buildable envelope from PLUTO and the Zoning Resolution. Use for \"what can I build\"; use fr-derogations-urbanisme for relief and fr-enveloppe-constructible for 3D visualization.",
+      "hostContract": "skills/fr-zonage-plu/host-contract.json",
+      "executionOwner": "host",
+      "triggers": [
+        "Analyze NYC lot zoning, FAR, height, setbacks, uses, and buildable envelope from PLUTO and the Zoning Resolution. Use for \"what can I build\"; use fr-derogations-urbanisme for relief and fr-enveloppe-constructible for 3D visualization."
+      ],
+      "exclusions": [
+        "No Arch Studio executable acquisition or unrequested record ownership"
+      ],
+      "inputs": [
+        "Supplied task and selected source scope; exact destination only for requested persistence or application work. Load project context only when the task needs project records."
+      ],
+      "outputs": [
+        "Requested verified native result with actual source evidence and unresolved limitations"
+      ],
+      "references": [
+        "skills/fr-zonage-plu/SKILL.md",
+        "skills/fr-zonage-plu/host-contract.json",
+        "docs/host-harness-contract.md",
+        "docs/host-adapters.md",
+        "docs/completion-reporting.md",
+        "corpus/host-contracts.json",
+        "docs/workspace-model.md",
+        "corpus/sources/catalog.json"
+      ],
+      "conditionalReferences": [
+        {
+          "path": "skills/project/references/context-resolution.md",
+          "when": "Existing governed project context is required."
+        },
+        {
+          "path": "rules/professional-disclaimer.md",
+          "when": "The requested result contains regulatory or life-safety analysis."
+        }
+      ],
+      "handoffs": []
+    },
+    {
       "id": "skill:invoice",
       "path": "skills/invoice/SKILL.md",
       "execution": "instructions",
@@ -1189,31 +1710,31 @@
           "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
         },
         {
-          "target": "skill:nyc-acris",
+          "target": "skill:fr-dvf-transactions",
           "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
         },
         {
-          "target": "skill:nyc-bsa",
+          "target": "skill:fr-derogations-urbanisme",
           "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
         },
         {
-          "target": "skill:nyc-dob-permits",
+          "target": "skill:fr-autorisations-urbanisme",
           "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
         },
         {
-          "target": "skill:nyc-dob-violations",
+          "target": "skill:fr-infractions-urbanisme",
           "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
         },
         {
-          "target": "skill:nyc-hpd",
+          "target": "skill:fr-habitat-insalubre",
           "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
         },
         {
-          "target": "skill:nyc-landmarks",
+          "target": "skill:fr-monuments-historiques",
           "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
         },
         {
-          "target": "skill:nyc-property-report",
+          "target": "skill:fr-rapport-foncier",
           "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
         },
         {
@@ -1341,11 +1862,11 @@
           "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
         },
         {
-          "target": "skill:zoning-analysis-nyc",
+          "target": "skill:fr-zonage-plu",
           "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
         },
         {
-          "target": "skill:zoning-envelope",
+          "target": "skill:fr-enveloppe-constructible",
           "when": "Selected from the release inventory for the requested outcome; preserve its ownership and host contract."
         },
         {
@@ -1413,457 +1934,6 @@
           "when": "General architecture or project work in the native host; preserve scope and authorization."
         }
       ]
-    },
-    {
-      "id": "skill:nyc-acris",
-      "path": "skills/nyc-acris/SKILL.md",
-      "execution": "instructions",
-      "dependencies": [
-        "knowledge:host-contracts",
-        "knowledge:sources"
-      ],
-      "description": "Look up NYC ACRIS deeds, mortgages, liens, sales, and ownership history. Use for property transactions or recorded ownership; not permits or violations.",
-      "triggers": [
-        "research NYC recorded-property documents evidence",
-        "prepare a sourced NYC recorded-property documents report"
-      ],
-      "exclusions": [
-        "infer jurisdiction or current source field definitions",
-        "treat unavailable or truncated results as zero or complete",
-        "adopt project facts/decisions or register documents without their owner"
-      ],
-      "inputs": [
-        "Explicit site/property/geography and selected period/domain scope; applicable original sources or authorized supplied evidence"
-      ],
-      "outputs": [
-        "Requested sourced findings/report with exact scope, counts, preserved unknowns, actual checks and material limitations"
-      ],
-      "references": [
-        "docs/host-harness-contract.md",
-        "docs/host-adapters.md",
-        "corpus/host-contracts.json",
-        "docs/workspace-model.md",
-        "docs/completion-reporting.md",
-        "docs/geographic-applicability.md",
-        "corpus/geographic-applicability.json",
-        "corpus/sources/catalog.json",
-        "skills/nyc-acris/SKILL.md",
-        "skills/nyc-acris/host-contract.json",
-        "skills/nyc-property-report/pluto-resolution.md",
-        "skills/nyc-property-report/socrata-reference.md"
-      ],
-      "conditionalReferences": [
-        {
-          "path": "skills/project/references/context-resolution.md",
-          "when": "Only for project-bound work or a requested typed record/document owner handoff; standalone research needs no project."
-        },
-        {
-          "path": "rules/professional-disclaimer.md",
-          "when": "When regulatory/life-safety or other professionally governed output requires its exact disclaimer/marker; preserve every owner-required end block."
-        }
-      ],
-      "executionOwner": "host",
-      "handoffs": [
-        {
-          "target": "skill:project",
-          "when": "Only for proposed sourced project facts/decisions; preserve existing authorization and no silent fact adoption."
-        },
-        {
-          "target": "skill:receive",
-          "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
-        }
-      ],
-      "hostContract": "skills/nyc-acris/host-contract.json"
-    },
-    {
-      "id": "skill:nyc-bsa",
-      "path": "skills/nyc-bsa/SKILL.md",
-      "execution": "instructions",
-      "dependencies": [
-        "knowledge:host-contracts",
-        "knowledge:sources"
-      ],
-      "description": "Look up NYC BSA variances, special permits, and appeals that modify as-of-right zoning. Use for zoning relief; use zoning-analysis-nyc for base controls.",
-      "triggers": [
-        "research NYC BSA decisions evidence",
-        "prepare a sourced NYC BSA decisions report"
-      ],
-      "exclusions": [
-        "infer jurisdiction or current source field definitions",
-        "treat unavailable or truncated results as zero or complete",
-        "adopt project facts/decisions or register documents without their owner"
-      ],
-      "inputs": [
-        "Explicit site/property/geography and selected period/domain scope; applicable original sources or authorized supplied evidence"
-      ],
-      "outputs": [
-        "Requested sourced findings/report with exact scope, counts, preserved unknowns, actual checks and material limitations"
-      ],
-      "references": [
-        "docs/host-harness-contract.md",
-        "docs/host-adapters.md",
-        "corpus/host-contracts.json",
-        "docs/workspace-model.md",
-        "docs/completion-reporting.md",
-        "docs/geographic-applicability.md",
-        "corpus/geographic-applicability.json",
-        "corpus/sources/catalog.json",
-        "skills/nyc-bsa/SKILL.md",
-        "skills/nyc-bsa/host-contract.json",
-        "skills/nyc-property-report/pluto-resolution.md",
-        "skills/nyc-property-report/socrata-reference.md"
-      ],
-      "conditionalReferences": [
-        {
-          "path": "skills/project/references/context-resolution.md",
-          "when": "Only for project-bound work or a requested typed record/document owner handoff; standalone research needs no project."
-        },
-        {
-          "path": "rules/professional-disclaimer.md",
-          "when": "When regulatory/life-safety or other professionally governed output requires its exact disclaimer/marker; preserve every owner-required end block."
-        }
-      ],
-      "executionOwner": "host",
-      "handoffs": [
-        {
-          "target": "skill:project",
-          "when": "Only for proposed sourced project facts/decisions; preserve existing authorization and no silent fact adoption."
-        },
-        {
-          "target": "skill:receive",
-          "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
-        }
-      ],
-      "hostContract": "skills/nyc-bsa/host-contract.json"
-    },
-    {
-      "id": "skill:nyc-dob-permits",
-      "path": "skills/nyc-dob-permits/SKILL.md",
-      "execution": "instructions",
-      "dependencies": [
-        "knowledge:host-contracts",
-        "knowledge:sources"
-      ],
-      "description": "Look up NYC DOB permits and new-building, alteration, or demolition job filings. Use for filed or permitted work and renovation history; use nyc-dob-violations for violations.",
-      "triggers": [
-        "research NYC building permit evidence",
-        "prepare a sourced NYC building permit report"
-      ],
-      "exclusions": [
-        "infer jurisdiction or current source field definitions",
-        "treat unavailable or truncated results as zero or complete",
-        "adopt project facts/decisions or register documents without their owner"
-      ],
-      "inputs": [
-        "Explicit site/property/geography and selected period/domain scope; applicable original sources or authorized supplied evidence"
-      ],
-      "outputs": [
-        "Requested sourced findings/report with exact scope, counts, preserved unknowns, actual checks and material limitations"
-      ],
-      "references": [
-        "docs/host-harness-contract.md",
-        "docs/host-adapters.md",
-        "corpus/host-contracts.json",
-        "docs/workspace-model.md",
-        "docs/completion-reporting.md",
-        "docs/geographic-applicability.md",
-        "corpus/geographic-applicability.json",
-        "corpus/sources/catalog.json",
-        "skills/nyc-dob-permits/SKILL.md",
-        "skills/nyc-dob-permits/host-contract.json",
-        "skills/nyc-property-report/pluto-resolution.md",
-        "skills/nyc-property-report/socrata-reference.md"
-      ],
-      "conditionalReferences": [
-        {
-          "path": "skills/project/references/context-resolution.md",
-          "when": "Only for project-bound work or a requested typed record/document owner handoff; standalone research needs no project."
-        },
-        {
-          "path": "rules/professional-disclaimer.md",
-          "when": "When regulatory/life-safety or other professionally governed output requires its exact disclaimer/marker; preserve every owner-required end block."
-        }
-      ],
-      "executionOwner": "host",
-      "handoffs": [
-        {
-          "target": "skill:project",
-          "when": "Only for proposed sourced project facts/decisions; preserve existing authorization and no silent fact adoption."
-        },
-        {
-          "target": "skill:receive",
-          "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
-        }
-      ],
-      "hostContract": "skills/nyc-dob-permits/host-contract.json"
-    },
-    {
-      "id": "skill:nyc-dob-violations",
-      "path": "skills/nyc-dob-violations/SKILL.md",
-      "execution": "instructions",
-      "dependencies": [
-        "knowledge:host-contracts",
-        "knowledge:sources"
-      ],
-      "description": "Look up open and resolved DOB and ECB violations for any NYC building, with class, status, and penalty detail. Use when the user asks whether a building has violations, stop-work orders, or outstanding ECB penalties. NYC only; for housing-code violations use /as:nyc-hpd.",
-      "triggers": [
-        "research NYC DOB violations evidence",
-        "prepare a sourced NYC DOB violations report"
-      ],
-      "exclusions": [
-        "infer jurisdiction or current source field definitions",
-        "treat unavailable or truncated results as zero or complete",
-        "adopt project facts/decisions or register documents without their owner"
-      ],
-      "inputs": [
-        "Explicit site/property/geography and selected period/domain scope; applicable original sources or authorized supplied evidence"
-      ],
-      "outputs": [
-        "Requested sourced findings/report with exact scope, counts, preserved unknowns, actual checks and material limitations"
-      ],
-      "references": [
-        "docs/host-harness-contract.md",
-        "docs/host-adapters.md",
-        "corpus/host-contracts.json",
-        "docs/workspace-model.md",
-        "docs/completion-reporting.md",
-        "docs/geographic-applicability.md",
-        "corpus/geographic-applicability.json",
-        "corpus/sources/catalog.json",
-        "skills/nyc-dob-violations/SKILL.md",
-        "skills/nyc-dob-violations/host-contract.json",
-        "skills/nyc-property-report/pluto-resolution.md",
-        "skills/nyc-property-report/socrata-reference.md"
-      ],
-      "conditionalReferences": [
-        {
-          "path": "skills/project/references/context-resolution.md",
-          "when": "Only for project-bound work or a requested typed record/document owner handoff; standalone research needs no project."
-        },
-        {
-          "path": "rules/professional-disclaimer.md",
-          "when": "When regulatory/life-safety or other professionally governed output requires its exact disclaimer/marker; preserve every owner-required end block."
-        }
-      ],
-      "executionOwner": "host",
-      "handoffs": [
-        {
-          "target": "skill:project",
-          "when": "Only for proposed sourced project facts/decisions; preserve existing authorization and no silent fact adoption."
-        },
-        {
-          "target": "skill:receive",
-          "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
-        }
-      ],
-      "hostContract": "skills/nyc-dob-violations/host-contract.json"
-    },
-    {
-      "id": "skill:nyc-hpd",
-      "path": "skills/nyc-hpd/SKILL.md",
-      "execution": "instructions",
-      "dependencies": [
-        "knowledge:host-contracts",
-        "knowledge:sources"
-      ],
-      "description": "Look up HPD violations, complaints, and building registration for NYC residential buildings. Use when the user asks about housing-code violations, tenant complaints, or HPD registration at an address. NYC only; for DOB and ECB violations use /as:nyc-dob-violations.",
-      "triggers": [
-        "research NYC HPD housing evidence",
-        "prepare a sourced NYC HPD housing report"
-      ],
-      "exclusions": [
-        "infer jurisdiction or current source field definitions",
-        "treat unavailable or truncated results as zero or complete",
-        "adopt project facts/decisions or register documents without their owner"
-      ],
-      "inputs": [
-        "Explicit site/property/geography and selected period/domain scope; applicable original sources or authorized supplied evidence"
-      ],
-      "outputs": [
-        "Requested sourced findings/report with exact scope, counts, preserved unknowns, actual checks and material limitations"
-      ],
-      "references": [
-        "docs/host-harness-contract.md",
-        "docs/host-adapters.md",
-        "corpus/host-contracts.json",
-        "docs/workspace-model.md",
-        "docs/completion-reporting.md",
-        "docs/geographic-applicability.md",
-        "corpus/geographic-applicability.json",
-        "corpus/sources/catalog.json",
-        "skills/nyc-hpd/SKILL.md",
-        "skills/nyc-hpd/host-contract.json",
-        "skills/nyc-property-report/pluto-resolution.md",
-        "skills/nyc-property-report/socrata-reference.md"
-      ],
-      "conditionalReferences": [
-        {
-          "path": "skills/project/references/context-resolution.md",
-          "when": "Only for project-bound work or a requested typed record/document owner handoff; standalone research needs no project."
-        },
-        {
-          "path": "rules/professional-disclaimer.md",
-          "when": "When regulatory/life-safety or other professionally governed output requires its exact disclaimer/marker; preserve every owner-required end block."
-        }
-      ],
-      "executionOwner": "host",
-      "handoffs": [
-        {
-          "target": "skill:project",
-          "when": "Only for proposed sourced project facts/decisions; preserve existing authorization and no silent fact adoption."
-        },
-        {
-          "target": "skill:receive",
-          "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
-        }
-      ],
-      "hostContract": "skills/nyc-hpd/host-contract.json"
-    },
-    {
-      "id": "skill:nyc-landmarks",
-      "path": "skills/nyc-landmarks/SKILL.md",
-      "execution": "instructions",
-      "dependencies": [
-        "knowledge:host-contracts",
-        "knowledge:sources"
-      ],
-      "description": "Check whether a NYC building is landmarked or in a historic district using LPC data. Use when the user asks \"is this building landmarked\", whether a site sits in a historic district, or whether LPC review applies. NYC only.",
-      "triggers": [
-        "research NYC landmark evidence",
-        "prepare a sourced NYC landmark report"
-      ],
-      "exclusions": [
-        "infer jurisdiction or current source field definitions",
-        "treat unavailable or truncated results as zero or complete",
-        "adopt project facts/decisions or register documents without their owner"
-      ],
-      "inputs": [
-        "Explicit site/property/geography and selected period/domain scope; applicable original sources or authorized supplied evidence"
-      ],
-      "outputs": [
-        "Requested sourced findings/report with exact scope, counts, preserved unknowns, actual checks and material limitations"
-      ],
-      "references": [
-        "docs/host-harness-contract.md",
-        "docs/host-adapters.md",
-        "corpus/host-contracts.json",
-        "docs/workspace-model.md",
-        "docs/completion-reporting.md",
-        "docs/geographic-applicability.md",
-        "corpus/geographic-applicability.json",
-        "corpus/sources/catalog.json",
-        "skills/nyc-landmarks/SKILL.md",
-        "skills/nyc-landmarks/host-contract.json",
-        "skills/nyc-property-report/pluto-resolution.md",
-        "skills/nyc-property-report/socrata-reference.md"
-      ],
-      "conditionalReferences": [
-        {
-          "path": "skills/project/references/context-resolution.md",
-          "when": "Only for project-bound work or a requested typed record/document owner handoff; standalone research needs no project."
-        },
-        {
-          "path": "rules/professional-disclaimer.md",
-          "when": "When regulatory/life-safety or other professionally governed output requires its exact disclaimer/marker; preserve every owner-required end block."
-        }
-      ],
-      "executionOwner": "host",
-      "handoffs": [
-        {
-          "target": "skill:project",
-          "when": "Only for proposed sourced project facts/decisions; preserve existing authorization and no silent fact adoption."
-        },
-        {
-          "target": "skill:receive",
-          "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
-        }
-      ],
-      "hostContract": "skills/nyc-landmarks/host-contract.json"
-    },
-    {
-      "id": "skill:nyc-property-report",
-      "path": "skills/nyc-property-report/SKILL.md",
-      "execution": "instructions",
-      "dependencies": [
-        "knowledge:host-contracts",
-        "knowledge:sources"
-      ],
-      "description": "Compile NYC landmarks, DOB, ACRIS, HPD, and BSA findings into one property due-diligence report. Use for a full report; use individual NYC skills for one dataset.",
-      "triggers": [
-        "research combined NYC property evidence",
-        "prepare a sourced combined NYC property report"
-      ],
-      "exclusions": [
-        "infer jurisdiction or current source field definitions",
-        "treat unavailable or truncated results as zero or complete",
-        "adopt project facts/decisions or register documents without their owner"
-      ],
-      "inputs": [
-        "Explicit site/property/geography and selected period/domain scope; applicable original sources or authorized supplied evidence"
-      ],
-      "outputs": [
-        "Requested sourced findings/report with exact scope, counts, preserved unknowns, actual checks and material limitations"
-      ],
-      "references": [
-        "docs/host-harness-contract.md",
-        "docs/host-adapters.md",
-        "corpus/host-contracts.json",
-        "docs/workspace-model.md",
-        "docs/completion-reporting.md",
-        "docs/geographic-applicability.md",
-        "corpus/geographic-applicability.json",
-        "corpus/sources/catalog.json",
-        "skills/nyc-property-report/SKILL.md",
-        "skills/nyc-property-report/host-contract.json",
-        "skills/nyc-property-report/pluto-resolution.md",
-        "skills/nyc-property-report/socrata-reference.md"
-      ],
-      "conditionalReferences": [
-        {
-          "path": "skills/project/references/context-resolution.md",
-          "when": "Only for project-bound work or a requested typed record/document owner handoff; standalone research needs no project."
-        },
-        {
-          "path": "rules/professional-disclaimer.md",
-          "when": "When regulatory/life-safety or other professionally governed output requires its exact disclaimer/marker; preserve every owner-required end block."
-        }
-      ],
-      "executionOwner": "host",
-      "handoffs": [
-        {
-          "target": "skill:project",
-          "when": "Only for proposed sourced project facts/decisions; preserve existing authorization and no silent fact adoption."
-        },
-        {
-          "target": "skill:receive",
-          "when": "Only for requested durable document placement or registration with explicit coordinates/kind and actual source evidence."
-        },
-        {
-          "target": "skill:nyc-acris",
-          "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
-        },
-        {
-          "target": "skill:nyc-dob-permits",
-          "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
-        },
-        {
-          "target": "skill:nyc-dob-violations",
-          "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
-        },
-        {
-          "target": "skill:nyc-hpd",
-          "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
-        },
-        {
-          "target": "skill:nyc-landmarks",
-          "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
-        },
-        {
-          "target": "skill:nyc-bsa",
-          "when": "Only for the requested domain scope after one verified property/building identity; preserve identity, period, source evidence and actual per-domain outcome."
-        }
-      ],
-      "hostContract": "skills/nyc-property-report/host-contract.json"
     },
     {
       "id": "skill:occupancy-calculator",
@@ -3799,90 +3869,6 @@
         }
       ],
       "hostContract": "skills/workplan/host-contract.json"
-    },
-    {
-      "id": "skill:zoning-analysis-nyc",
-      "path": "skills/zoning-analysis-nyc/SKILL.md",
-      "execution": "instructions",
-      "dependencies": [
-        "knowledge:sources",
-        "knowledge:jurisdictions",
-        "knowledge:host-contracts"
-      ],
-      "description": "Analyze NYC lot zoning, FAR, height, setbacks, uses, and buildable envelope from PLUTO and the Zoning Resolution. Use for \"what can I build\"; use nyc-bsa for relief and zoning-envelope for 3D visualization.",
-      "hostContract": "skills/zoning-analysis-nyc/host-contract.json",
-      "executionOwner": "host",
-      "triggers": [
-        "Analyze NYC lot zoning, FAR, height, setbacks, uses, and buildable envelope from PLUTO and the Zoning Resolution. Use for \"what can I build\"; use nyc-bsa for relief and zoning-envelope for 3D visualization."
-      ],
-      "exclusions": [
-        "No Arch Studio executable acquisition or unrequested record ownership"
-      ],
-      "inputs": [
-        "Supplied task and selected source scope; exact destination only for requested persistence or application work. Load project context only when the task needs project records."
-      ],
-      "outputs": [
-        "Requested verified native result with actual source evidence and unresolved limitations"
-      ],
-      "references": [
-        "skills/zoning-analysis-nyc/SKILL.md",
-        "skills/zoning-analysis-nyc/host-contract.json",
-        "docs/host-harness-contract.md",
-        "docs/host-adapters.md",
-        "docs/completion-reporting.md",
-        "corpus/host-contracts.json",
-        "docs/workspace-model.md",
-        "corpus/sources/catalog.json"
-      ],
-      "conditionalReferences": [
-        {
-          "path": "skills/project/references/context-resolution.md",
-          "when": "Existing governed project context is required."
-        },
-        {
-          "path": "rules/professional-disclaimer.md",
-          "when": "The requested result contains regulatory or life-safety analysis."
-        }
-      ],
-      "handoffs": []
-    },
-    {
-      "id": "skill:zoning-envelope",
-      "path": "skills/zoning-envelope/SKILL.md",
-      "execution": "instructions",
-      "dependencies": [
-        "skill:zoning-analysis-nyc",
-        "knowledge:host-contracts"
-      ],
-      "description": "Generate interactive 3D zoning envelope viewers from zoning analysis reports. Use when the user asks to \"visualize the zoning envelope\" or see buildable massing in 3D, typically after /as:zoning-analysis-nyc. Requires a zoning analysis report as input.",
-      "hostContract": "skills/zoning-envelope/host-contract.json",
-      "executionOwner": "host",
-      "triggers": [
-        "Generate interactive 3D zoning envelope viewers from zoning analysis reports. Use when the user asks to \"visualize the zoning envelope\" or see buildable massing in 3D, typically after /as:zoning-analysis-nyc. Requires a zoning analysis report as input."
-      ],
-      "exclusions": [
-        "No executable acquisition or unrequested canonical mutation"
-      ],
-      "inputs": [
-        "Supplied task and selected source scope; exact destination only for requested persistence or application work. Load project context only when the task needs project records."
-      ],
-      "outputs": [
-        "Verified requested artifact, preserved source evidence and explicit incomplete checks"
-      ],
-      "references": [
-        "skills/zoning-envelope/SKILL.md",
-        "docs/geographic-applicability.md",
-        "corpus/geographic-applicability.json",
-        "rules/professional-disclaimer.md",
-        "docs/workspace-model.md",
-        "docs/completion-reporting.md",
-        "skills/zoning-envelope/host-contract.json",
-        "docs/host-harness-contract.md",
-        "docs/host-adapters.md",
-        "corpus/host-contracts.json"
-      ],
-      "conditionalReferences": [],
-      "handoffs": []
     }
   ]
 }

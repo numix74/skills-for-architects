@@ -16,7 +16,7 @@ follows the relevant skills directly. Direct skill calls and existing profile na
 | Agent | Domain | Skills it orchestrates |
 |-------|--------|----------------------|
 | [site-planner](../agents/site-planner.md) | Site Planning | environmental-analysis, mobility-analysis, demographics-analysis, site-history |
-| [nyc-zoning-expert](../agents/nyc-zoning-expert.md) | Due Diligence + Zoning | nyc-landmarks, nyc-dob-permits, nyc-dob-violations, nyc-acris, nyc-hpd, nyc-bsa, nyc-property-report, zoning-analysis-nyc, zoning-envelope |
+| [fr-zonage-expert](../agents/fr-zonage-expert.md) | Due Diligence + Zoning | fr-monuments-historiques, fr-autorisations-urbanisme, fr-infractions-urbanisme, fr-dvf-transactions, fr-habitat-insalubre, fr-derogations-urbanisme, fr-rapport-foncier, fr-zonage-plu, fr-enveloppe-constructible |
 | [workplace-strategist](../agents/workplace-strategist.md) | Programming | occupancy-calculator, workplace-programmer |
 | [sustainability-specialist](../agents/sustainability-specialist.md) | Sustainability | epd-research, epd-compare, epd-parser, epd-to-spec |
 | [product-and-materials-researcher](../agents/product-and-materials-researcher.md) | Materials Research | product-research, product-spec-bulk-fetch, product-spec-pdf-parser, product-match, product-enrich |

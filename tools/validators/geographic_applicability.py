@@ -9,11 +9,15 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[2]
 NYC = 'jurisdiction:us-ny-nyc'
+FR = 'jurisdiction:fr'
+PROFILE_JURISDICTION = {'nyc-records': NYC, 'nyc-zoning': NYC, 'france-records': FR, 'france-zoning': FR}
 LIMITATIONS = {
     'portable': 'The method has no built-in geographic selection. Its sources, market facts, standards and regulatory assertions still need task-specific checks; this is not worldwide substantive coverage.',
     'site-research': 'Location-specific source research only. No complete geographic dataset, hazard coverage or validated site conclusion is established.',
     'nyc-records': 'Existing NYC procedure only. Verify exact property, issuing agency, dataset coverage and observation period; absence of records is not clearance.',
     'nyc-zoning': 'Existing NYC zoning procedure only. Every controlling provision, edition, amendment, date and site condition remains to be verified.',
+    'france-records': 'Existing French public-record procedure only. Verify exact parcel, issuing authority, dataset coverage and observation period; absence of records is not clearance.',
+    'france-zoning': 'Existing French zoning procedure only (PLU, PLUi, carte communale, RNU). Verify the applicable document, its approval date, the regulatory text and any servitude; GIS data has no regulatory value by itself.',
     'jurisdiction-calculation': 'Jurisdiction-dependent occupant-load method. Bundled IBC factors are comparison data, never proof of adoption or a substitute for local rules.',
     'input-report': 'Render supplied report evidence and limitations without recalculating or certifying zoning applicability.',
     'us-explanation': 'US professional-practice orientation only. No workspace is required; no local legal or worldwide practice claim is established.',
@@ -111,7 +115,7 @@ def assess(document, request, root=ROOT):
         result['reasons'].append(reason)
 
     required = set(request.get('material_fields', []))
-    if profile in ('nyc-zoning', 'jurisdiction-calculation'):
+    if profile in ('nyc-zoning', 'france-zoning', 'jurisdiction-calculation'):
         required.update(('as_of', 'use', 'work_scope'))
     for field in sorted(required):
         if not request.get(field):
@@ -130,12 +134,10 @@ def assess(document, request, root=ROOT):
         return result
     result['location'] = locations[0]
     jurisdiction = locations[0]['jurisdiction']
-    if profile in ('nyc-records', 'nyc-zoning') and jurisdiction != NYC:
-        if jurisdiction in ('jurisdiction:us', 'jurisdiction:us-ny'):
-            missing('Resolve whether the site is in New York City; country/state alone does not establish NYC applicability.')
-        else:
-            result['status'] = 'unsupported'
-            result['reasons'].append('This procedure is NYC-only; do not substitute NYC datasets or rules for another location.')
+    expected = PROFILE_JURISDICTION.get(profile)
+    if expected and jurisdiction != expected:
+        result['status'] = 'unsupported'
+        result['reasons'].append('This procedure is limited to its supported jurisdiction; do not substitute its datasets or rules for another location.')
         return result
     if profile == 'jurisdiction-calculation' and jurisdiction != 'jurisdiction:us' and not jurisdiction.startswith('jurisdiction:us-'):
         if not request.get('local_rule_reference'):

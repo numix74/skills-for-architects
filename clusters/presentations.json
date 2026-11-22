@@ -8,7 +8,7 @@
     "skill:slide-deck-generator",
     "skill:color-palette-generator",
     "skill:resize-images",
-    "skill:zoning-envelope",
+    "skill:fr-enveloppe-constructible",
     "studio:workspace-contract"
   ],
   "dependencies": [],

@@ -24,6 +24,12 @@
       "name": "New Jersey",
       "parent": "jurisdiction:us",
       "coverage": "routing-only"
+    },
+    {
+      "id": "jurisdiction:fr",
+      "name": "France",
+      "parent": null,
+      "coverage": "routing-only"
     }
   ]
 }

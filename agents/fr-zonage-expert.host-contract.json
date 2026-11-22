@@ -1,6 +1,6 @@
 {
-  "path": "agents/nyc-zoning-expert.md",
-  "responsibility": "Coordinate NYC property research, zoning analysis and requested envelope visualization using applicable original agency sources.",
+  "path": "agents/fr-zonage-expert.md",
+  "responsibility": "Coordonner les recherches foncières françaises, le zonage PLU et la visualisation de l'enveloppe constructible.",
   "inputs": "Original task, selected sources, exact targets, permissions and result evidence; delegates inherit these constraints.",
   "owned_records": [],
   "non_owned_records": [

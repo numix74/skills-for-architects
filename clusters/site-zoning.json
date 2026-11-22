@@ -5,8 +5,8 @@
   "maintainer": "Arch Studio maintainers",
   "scope": "Existing NYC zoning and general site investigation procedures.",
   "members": [
-    "skill:zoning-analysis-nyc",
-    "skill:zoning-envelope",
+    "skill:fr-zonage-plu",
+    "skill:fr-enveloppe-constructible",
     "skill:environmental-analysis",
     "skill:mobility-analysis",
     "skill:demographics-analysis",

@@ -7,13 +7,13 @@ A listed procedure is not proof of executable tooling, legal coverage or a valid
 
 | Cluster | Public procedures | Geographic declaration |
 |---|---|---|
-| [Due Diligence](../clusters/due-diligence.json) | `nyc-property-report`, `nyc-acris`, `nyc-bsa`, `nyc-dob-permits`, `nyc-dob-violations`, `nyc-hpd`, `nyc-landmarks`, `site-history` | jurisdiction:us-ny-nyc |
+| [Due Diligence](../clusters/due-diligence.json) | `fr-rapport-foncier`, `fr-dvf-transactions`, `fr-derogations-urbanisme`, `fr-autorisations-urbanisme`, `fr-infractions-urbanisme`, `fr-habitat-insalubre`, `fr-monuments-historiques`, `site-history` | jurisdiction:us-ny-nyc |
 | [Firm Operations](../clusters/firm-operations.json) | `studio`, `studio-feedback`, `proposal`, `agreement`, `invoice`, `skill-maker`, `learn`, `tool-catalog`, `norma`, `norma-support` | No cluster-wide coverage; inspect individual skill |
 | [Materials & FF&E](../clusters/materials-ffe.json) | `master-schedule`, `product-data-cleanup`, `product-data-import`, `product-enrich`, `product-image-processor`, `product-match`, `product-pair`, `product-research`, `product-spec-bulk-fetch`, `product-spec-pdf-parser`, `csv-to-sif`, `sif-to-csv`, `product-audit`, `product-cut-sheet`, `ffe-spec-book`, `product-library`, `product-url-clip`, `drawing-quantity-extract`, `schedule-quantity-reconcile`, `lighting-report-extract` | No cluster-wide coverage; inspect individual skill |
-| [Presentations](../clusters/presentations.json) | `slide-deck-generator`, `color-palette-generator`, `resize-images`, `zoning-envelope` | No cluster-wide coverage; inspect individual skill |
+| [Presentations](../clusters/presentations.json) | `slide-deck-generator`, `color-palette-generator`, `resize-images`, `fr-enveloppe-constructible` | No cluster-wide coverage; inspect individual skill |
 | [Programming](../clusters/programming.json) | `workplace-programmer`, `occupancy-calculator` | jurisdiction:us-ny-nyc |
 | [Project Management](../clusters/project-management.json) | `project`, `workplan`, `tasklist`, `timetracker`, `meeting-minutes`, `site-visit-report`, `agreement`, `architecture-knowledge`, `receive` | No cluster-wide coverage; inspect individual skill |
-| [Site & Zoning](../clusters/site-zoning.json) | `zoning-analysis-nyc`, `zoning-envelope`, `environmental-analysis`, `mobility-analysis`, `demographics-analysis`, `site-history` | jurisdiction:us-ny-nyc |
+| [Site & Zoning](../clusters/site-zoning.json) | `fr-zonage-plu`, `fr-enveloppe-constructible`, `environmental-analysis`, `mobility-analysis`, `demographics-analysis`, `site-history` | jurisdiction:us-ny-nyc |
 | [Specifications](../clusters/specifications.json) | `spec-writer`, `epd-to-spec`, `architecture-knowledge` | No cluster-wide coverage; inspect individual skill |
 | [Sustainability](../clusters/sustainability.json) | `epd-research`, `epd-parser`, `epd-compare`, `epd-to-spec`, `environmental-analysis` | No cluster-wide coverage; inspect individual skill |
 

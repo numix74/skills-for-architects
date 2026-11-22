@@ -96,7 +96,7 @@ For teams, Arch Studio MCP is connected rather than installed; see [Two editions
 
 1. **studio** — Run `/as:studio` to record your studio's policy, conventions and projects, or skip setup and go straight to a task. Skills work either way.
 2. **norma** — Describe what you need in plain words. Norma picks the skills, handles quick lookups directly, and for larger jobs uses **workplan** to show you a work plan (steps, skills, and outputs) before starting.
-3. **Research skills** — Site, zoning, property, product, and EPD skills fetch original sources and cite them. For example, **nyc-property-report** gathers landmarks, permits, violations, ownership, housing, and BSA records into one report.
+3. **Research skills** — Site, zoning, property, product, and EPD skills fetch original sources and cite them. For example, **fr-rapport-foncier** gathers landmarks, permits, violations, ownership, housing, and BSA records into one report.
 4. **Specification and presentation skills** — **spec-writer**, **epd-to-spec**, **product-cut-sheet**, **slide-deck-generator** and others prepare documents from the research. Anything regulatory is marked for professional review.
 5. **Record skills** — **project**, **receive**, **meeting-minutes**, **tasklist** and **timetracker** keep facts, documents, decisions, tasks, and time in your project folder. They offer what to save rather than writing silently, and time is logged only in amounts you confirm.
 6. **skill-maker** — When your firm repeats a procedure, run `/as:skill-maker` to turn it into a studio or project skill.
@@ -138,13 +138,13 @@ Not sure what is available? `/as:tool-catalog` lists every skill and agent on yo
 - **architecture-knowledge** — Plain explanations of US practice terms: phases, CD sets, AIA contracts, CSI/NCS
 
 **NYC due diligence**
-- **nyc-landmarks** — Landmark and historic-district check (LPC)
-- **nyc-dob-permits** — DOB permits and job filings
-- **nyc-dob-violations** — DOB and ECB violations
-- **nyc-acris** — Deeds, mortgages, liens, and sales (ACRIS)
-- **nyc-hpd** — HPD violations, complaints, and registration
-- **nyc-bsa** — BSA variances and special permits
-- **nyc-property-report** — All of the above in one report
+- **fr-monuments-historiques** — Landmark and historic-district check (LPC)
+- **fr-autorisations-urbanisme** — DOB permits and job filings
+- **fr-infractions-urbanisme** — DOB and ECB violations
+- **fr-dvf-transactions** — Deeds, mortgages, liens, and sales (ACRIS)
+- **fr-habitat-insalubre** — HPD violations, complaints, and registration
+- **fr-derogations-urbanisme** — BSA variances and special permits
+- **fr-rapport-foncier** — All of the above in one report
 
 **Site planning**
 - **environmental-analysis** — Climate, sun, flood, seismic, soil, and topography
@@ -153,8 +153,8 @@ Not sure what is available? `/as:tool-catalog` lists every skill and agent on yo
 - **site-history** — Neighborhood context, landmarks, and planned development
 
 **Zoning**
-- **zoning-analysis-nyc** — NYC FAR, height, setbacks, and uses for a lot
-- **zoning-envelope** — Interactive 3D view of the buildable envelope
+- **fr-zonage-plu** — NYC FAR, height, setbacks, and uses for a lot
+- **fr-enveloppe-constructible** — Interactive 3D view of the buildable envelope
 
 **Programming**
 - **workplace-programmer** — Office programs from headcount and work style
@@ -205,7 +205,7 @@ Eight agents: seven specialists and an optional Norma worker. Each one combines 
 | Agent | What it does |
 |-------|--------------|
 | [site-planner](./agents/site-planner.md) | Runs environmental, mobility, demographic, and history research, then combines them |
-| [nyc-zoning-expert](./agents/nyc-zoning-expert.md) | NYC property research, zoning analysis, and envelope visualization |
+| [fr-zonage-expert](./agents/fr-zonage-expert.md) | NYC property research, zoning analysis, and envelope visualization |
 | [workplace-strategist](./agents/workplace-strategist.md) | Turns headcount and work style into programs and room schedules |
 | [product-and-materials-researcher](./agents/product-and-materials-researcher.md) | Finds products, extracts specs, and suggests alternatives |
 | [ffe-designer](./agents/ffe-designer.md) | Builds schedules and room packages, checks them, and prepares dealer files |

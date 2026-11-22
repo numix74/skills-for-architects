@@ -287,7 +287,7 @@
         "max_bytes": 262144
       },
       "existing_skills": [
-        "zoning-analysis-nyc"
+        "fr-zonage-plu"
       ],
       "topics": [
         "code",
@@ -319,13 +319,13 @@
         "max_bytes": 262144
       },
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "zoning-analysis-nyc"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-zonage-plu"
       ],
       "topics": [
         "code",
@@ -620,7 +620,7 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "zoning-analysis-nyc"
+        "fr-zonage-plu"
       ],
       "topics": [
         "nyc",
@@ -644,7 +644,7 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "zoning-analysis-nyc"
+        "fr-zonage-plu"
       ],
       "topics": [
         "nyc",
@@ -669,7 +669,7 @@
       "identity": null,
       "existing_skills": [
         "site-history",
-        "zoning-analysis-nyc"
+        "fr-zonage-plu"
       ],
       "topics": [
         "code",
@@ -694,7 +694,7 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "zoning-analysis-nyc"
+        "fr-zonage-plu"
       ],
       "topics": [
         "nyc",
@@ -718,7 +718,7 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "zoning-analysis-nyc"
+        "fr-zonage-plu"
       ],
       "topics": [
         "nyc",
@@ -742,7 +742,7 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "zoning-analysis-nyc"
+        "fr-zonage-plu"
       ],
       "topics": [
         "nyc",
@@ -766,13 +766,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -805,13 +805,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -844,13 +844,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -883,13 +883,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -922,13 +922,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -961,13 +961,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -1000,13 +1000,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -1039,13 +1039,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -1078,13 +1078,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -1117,13 +1117,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -1156,13 +1156,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -1195,13 +1195,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -1234,13 +1234,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -1273,13 +1273,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -1312,13 +1312,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -1351,13 +1351,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -1390,13 +1390,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -1429,13 +1429,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -1468,13 +1468,13 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-acris",
-        "nyc-bsa",
-        "nyc-dob-permits",
-        "nyc-dob-violations",
-        "nyc-hpd",
-        "nyc-landmarks",
-        "nyc-property-report"
+        "fr-dvf-transactions",
+        "fr-derogations-urbanisme",
+        "fr-autorisations-urbanisme",
+        "fr-infractions-urbanisme",
+        "fr-habitat-insalubre",
+        "fr-monuments-historiques",
+        "fr-rapport-foncier"
       ],
       "topics": [
         "nyc",
@@ -1507,7 +1507,7 @@
       "adapter": null,
       "identity": null,
       "existing_skills": [
-        "nyc-property-report"
+        "fr-rapport-foncier"
       ],
       "topics": [
         "dataset",
