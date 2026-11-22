@@ -927,8 +927,8 @@
       "capability": {
         "description": "Rechercher les transactions immobilières DVF (ventes, prix, surfaces) autour d'une parcelle ou dans une commune française. Pour l'historique des ventes uniquement, pas les permis ni les infractions.",
         "triggers": [
-          "research NYC recorded-property documents evidence",
-          "prepare a sourced NYC recorded-property documents report"
+          "rechercher France recorded-property documents evidence",
+          "préparer un rapport sourcé France recorded-property documents report"
         ],
         "exclusions": [
           "infer jurisdiction or current source field definitions",
@@ -990,8 +990,8 @@
       "capability": {
         "description": "Rechercher les dérogations aux règles d'urbanisme, les permis valant dérogation et les recours contre des autorisations qui modifient le zonage. Pour les règles de base, utiliser fr-zonage-plu.",
         "triggers": [
-          "research NYC BSA decisions evidence",
-          "prepare a sourced NYC BSA decisions report"
+          "rechercher France BSA decisions evidence",
+          "préparer un rapport sourcé France BSA decisions report"
         ],
         "exclusions": [
           "infer jurisdiction or current source field definitions",
@@ -1053,8 +1053,8 @@
       "capability": {
         "description": "Rechercher les permis de construire, déclarations préalables, permis d'aménager et permis de démolir (base Sitadel) pour une commune ou une parcelle. Pour les infractions, utiliser fr-infractions-urbanisme.",
         "triggers": [
-          "research NYC building permit evidence",
-          "prepare a sourced NYC building permit report"
+          "rechercher France building permit evidence",
+          "préparer un rapport sourcé France building permit report"
         ],
         "exclusions": [
           "infer jurisdiction or current source field definitions",
@@ -1116,8 +1116,8 @@
       "capability": {
         "description": "Vérifier les infractions et procédures d'urbanisme (procès-verbaux, mises en demeure, arrêtés) concernant un bâtiment. Aucune base nationale ouverte : la donnée s'obtient souvent en mairie.",
         "triggers": [
-          "research NYC DOB violations evidence",
-          "prepare a sourced NYC DOB violations report"
+          "rechercher France DOB violations evidence",
+          "préparer un rapport sourcé France DOB violations report"
         ],
         "exclusions": [
           "infer jurisdiction or current source field definitions",
@@ -1179,8 +1179,8 @@
       "capability": {
         "description": "Vérifier les arrêtés d'insalubrité, de péril et les signalements d'habitat indigne concernant un logement. Pour l'urbanisme, utiliser fr-infractions-urbanisme.",
         "triggers": [
-          "research NYC HPD housing evidence",
-          "prepare a sourced NYC HPD housing report"
+          "rechercher France HPD housing evidence",
+          "préparer un rapport sourcé France HPD housing report"
         ],
         "exclusions": [
           "infer jurisdiction or current source field definitions",
@@ -1240,10 +1240,10 @@
         "knowledge:sources"
       ],
       "capability": {
-        "description": "Check whether a NYC building is landmarked or in a historic district using LPC data. Use when the user asks \"is this building landmarked\", whether a site sits in a historic district, or whether LPC review applies. NYC only.",
+        "description": "Check whether a France building is landmarked or in a historic district using LPC data. Use when the user asks \"is this building landmarked\", whether a site sits in a historic district, or whether LPC review applies. France only.",
         "triggers": [
-          "research NYC landmark evidence",
-          "prepare a sourced NYC landmark report"
+          "rechercher France landmark evidence",
+          "préparer un rapport sourcé France landmark report"
         ],
         "exclusions": [
           "infer jurisdiction or current source field definitions",
@@ -1290,8 +1290,7 @@
           }
         ],
         "hostContract": "skills/fr-monuments-historiques/host-contract.json"
-      },
-      "description": "Vérifier si un bâtiment est classé ou inscrit aux Monuments historiques, ou situé dans un périmètre protégé (abords, SPR). France uniquement."
+      }
     },
     {
       "id": "skill:fr-rapport-foncier",
@@ -1306,8 +1305,8 @@
       "capability": {
         "description": "Compiler transactions DVF, autorisations d'urbanisme, monuments historiques, zonage PLU et risques en un rapport de diligence foncière française.",
         "triggers": [
-          "research combined NYC property evidence",
-          "prepare a sourced combined NYC property report"
+          "research combined France property evidence",
+          "prepare a sourced combined France property report"
         ],
         "exclusions": [
           "infer jurisdiction or current source field definitions",
@@ -3039,11 +3038,11 @@
         "knowledge:host-contracts"
       ],
       "capability": {
-        "description": "Analyze NYC lot zoning, FAR, height, setbacks, uses, and buildable envelope from PLUTO and the Zoning Resolution. Use for \"what can I build\"; use fr-derogations-urbanisme for relief and fr-enveloppe-constructible for 3D visualization.",
+        "description": "Analyze France lot zoning, FAR, height, setbacks, uses, and buildable envelope from PLUTO and the Zoning Resolution. Use for \"what can I build\"; use fr-derogations-urbanisme for relief and fr-enveloppe-constructible for 3D visualization.",
         "hostContract": "skills/fr-zonage-plu/host-contract.json",
         "executionOwner": "host",
         "triggers": [
-          "Analyze NYC lot zoning, FAR, height, setbacks, uses, and buildable envelope from PLUTO and the Zoning Resolution. Use for \"what can I build\"; use fr-derogations-urbanisme for relief and fr-enveloppe-constructible for 3D visualization."
+          "Analyze France lot zoning, FAR, height, setbacks, uses, and buildable envelope from PLUTO and the Zoning Resolution. Use for \"what can I build\"; use fr-derogations-urbanisme for relief and fr-enveloppe-constructible for 3D visualization."
         ],
         "exclusions": [
           "No Arch Studio executable acquisition or unrequested record ownership"
@@ -3075,8 +3074,7 @@
           }
         ],
         "handoffs": []
-      },
-      "description": "Analyser le zonage d'une parcelle française (PLU, PLUi, carte communale, règlement national d'urbanisme) : zone, hauteur, emprise, retraits, usages. Pour une dérogation, utiliser fr-derogations-urbanisme."
+      }
     },
     {
       "id": "skill:fr-enveloppe-constructible",
@@ -3118,8 +3116,7 @@
         ],
         "conditionalReferences": [],
         "handoffs": []
-      },
-      "description": "Générer une visualisation 3D interactive de l'enveloppe constructible à partir d'un rapport fr-zonage-plu. Nécessite ce rapport en entrée."
+      }
     },
     {
       "id": "tool:plugin-namespace",

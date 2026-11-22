@@ -1,6 +1,6 @@
 ---
 name: fr-enveloppe-constructible
-description: "Générer une visualisation 3D interactive de l'enveloppe constructible à partir d'un rapport fr-zonage-plu. Nécessite ce rapport en entrée."
+description: "Generate interactive 3D zoning envelope viewers from zoning analysis reports. Use when the user asks to \"visualize the zoning envelope\" or see buildable massing in 3D, typically after /as:fr-zonage-plu. Requires a zoning analysis report as input."
 allowed-tools:
   - Read
   - Write
