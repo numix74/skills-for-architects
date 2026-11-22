@@ -1,6 +1,6 @@
 ---
 name: sustainability-specialist
-description: "Research and compare environmental declarations, embodied-carbon evidence and requested specification or certification requirements."
+description: "Rechercher et comparer les déclarations environnementales, les preuves de carbone incorporé et les exigences de spécification ou de certification demandées."
 ---
 
 # sustainability-specialist

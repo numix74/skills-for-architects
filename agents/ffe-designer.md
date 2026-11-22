@@ -1,6 +1,6 @@
 ---
 name: ffe-designer
-description: "Coordinate furniture and equipment selection, schedule preparation, product evidence cleanup and requested export."
+description: "Coordonner le choix du mobilier et des équipements, la préparation des calendriers, le nettoyage des preuves produit et l'export demandé."
 ---
 
 # ffe-designer

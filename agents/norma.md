@@ -1,6 +1,6 @@
 ---
 name: norma
-description: Execute an approved, context-resolved architecture or firm assignment through the relevant Arch Studio owners. Optional host worker; use only after the main harness has resolved pending questions and authorization.
+description: "Exécuter une mission d'architecture ou d'agence approuvée et dont le contexte est résolu, via les propriétaires Arch Studio concernés. Agent optionnel ; à utiliser seulement après que le pilote principal a résolu les questions en attente et l'autorisation."
 ---
 
 # Norma worker

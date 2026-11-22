@@ -1,6 +1,6 @@
 ---
 name: brand-manager
-description: "Coordinate presentations, color palettes, image sizing and visual consistency for requested architectural communication."
+description: "Coordonner les présentations, palettes de couleurs, dimensionnement des images et cohérence visuelle pour la communication architecturale demandée."
 ---
 
 # brand-manager

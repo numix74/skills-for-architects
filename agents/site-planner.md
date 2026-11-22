@@ -1,6 +1,6 @@
 ---
 name: site-planner
-description: "Research site context, environmental conditions, mobility, demographics and neighborhood history for a site brief or comparison."
+description: "Rechercher le contexte du site, les conditions environnementales, la mobilité, la démographie et l'histoire du quartier pour un programme de site ou une comparaison."
 ---
 
 # site-planner

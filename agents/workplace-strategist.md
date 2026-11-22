@@ -1,6 +1,6 @@
 ---
 name: workplace-strategist
-description: "Plan workplace area, seats and rooms from headcount, activities and user requirements; coordinate requested occupant-load analysis separately."
+description: "Planifier la surface de travail, les postes et les salles à partir des effectifs, des activités et des besoins utilisateurs ; coordonner séparément l'analyse de charge d'occupation demandée."
 ---
 
 # workplace-strategist

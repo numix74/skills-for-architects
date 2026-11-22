@@ -1,6 +1,6 @@
 ---
 name: product-and-materials-researcher
-description: "Find architecture products and materials, extract original product evidence, compare alternatives and resolve requested specification gaps."
+description: "Rechercher des produits et matériaux d'architecture, extraire les preuves produit originales, comparer les alternatives et combler les lacunes de spécification demandées."
 ---
 
 # product-and-materials-researcher
