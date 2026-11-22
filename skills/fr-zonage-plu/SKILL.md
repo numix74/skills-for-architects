@@ -12,9 +12,9 @@ allowed-tools:
 
 # /as:fr-zonage-plu — Analyse du zonage français (PLU, PLUi, RNU)
 
-Before acting, read the [host contract](../../docs/host-harness-contract.md) and this component's [declaration](host-contract.json) (`skill:fr-zonage-plu`). Charger seulement les modes applicables depuis le [catalogue partagé](../../corpus/host-contracts.json). Les déclarations sont des exigences, pas une preuve d'accès.
+Avant d'agir, lire le [contrat d'hôte](../../docs/host-harness-contract.md) et la [déclaration](host-contract.json) de ce composant (`skill:fr-zonage-plu`). Charger seulement les modes applicables depuis le [catalogue partagé](../../corpus/host-contracts.json) ; les déclarations sont des exigences, pas une preuve d'accès ni une permission. Utiliser la [route de livraison](../../docs/host-adapters.md) de l'hôte réel.
 
-Use the actual host's [delivery route](../../docs/host-adapters.md).
+Utiliser la [route de livraison](../../docs/host-adapters.md) de l'hôte réel.
 
 Read the [shared applicability contract](../../docs/geographic-applicability.md) before applying any rule.
 
